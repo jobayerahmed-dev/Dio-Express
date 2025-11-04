@@ -1,0 +1,125 @@
+/*--------------------------------------------
+* SHOP CSS
+--------------------------------------------*/
+.cdx-shop-header {
+    background-color: #ECEDE3;
+    padding: 15px 30px; 
+    margin-bottom: 30px;
+    @media #{$sm} {
+        padding: 15px;  
+    }
+    .cdx-icon-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background-color: var(--white);  
+    }
+}
+
+.cdx-product-result-title {
+    color: #030611;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline;
+    line-height: 1;
+}
+
+.cdx-product-select { 
+   -webkit-appearance: none;
+   -moz-appearance: none;
+    background-image: url(../images/shop-page/icon/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position-x: 96%;
+    background-position-y: 50%;
+    border: 0;
+    background-color: var(--white);
+    padding: 10px 20px;
+    color: #6E7984;
+    font-size: 15px;
+    font-weight: 400;
+    width: 240px;
+    display: block; 
+    @media #{$sm} {
+        width: 200px;
+    }
+    &:focus {
+        outline: 0;
+        border: 0;
+    }
+    
+}
+
+.cdx-product-card {
+    text-align: center;
+    transition: all 0.5s;
+    &:hover {
+        .cdx-thumb {
+            transform: scale(1.1);
+        }
+    }
+    .cdx-details {
+        padding-top: 4px;
+    }
+    .cdx-thumb-wrap {
+        width: 300px;
+        height: 320px;
+        background-color: #F5F5F5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        position: relative;
+        overflow: hidden; 
+        @media #{$xl} {
+            width: auto;
+            height: 290px;
+        }
+        @media #{$md} {
+            height: 320px;
+        }
+    }
+    .cdx-thumb {
+        width: auto;
+        height: auto;
+        transition: all 0.5s;
+    }
+    .cdx-sale-text {
+        color: var(--white); 
+        font-size: 14px;
+        font-weight: 600;
+        display: inline-block;
+        padding: 1px 12px;
+        background-color: #0989FF;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .cdx-title {
+        color: #010F1C; 
+        font-size: 20px; 
+        font-weight: 500; 
+        transition: all 0.5s;
+        display: inline-block;
+        line-height: 1;   
+        padding: 15px 0px 10px;
+        &:hover {
+            color: #F84258;
+        }
+    }
+    .cdx-price {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        justify-content: center;
+        color: #F84258; 
+        font-size: 16px; 
+        font-weight: 500;  
+        margin-top: -5px;
+        .cdx-off-price {
+            color: #55585B;
+            text-decoration: line-through;
+        }
+    }
+}

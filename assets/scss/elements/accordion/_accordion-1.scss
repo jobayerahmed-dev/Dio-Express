@@ -1,0 +1,37 @@
+
+/*--------------------------------------------
+* ACCORDION CSS ONE
+--------------------------------------------*/
+
+.cdx-accordion-style-1 {
+    .accordion-item {
+        border: 0;
+        margin-bottom: 25px;
+        .accordion-header {
+            border: 0;
+            .accordion-button {
+                background-color: transparent;
+                padding: 6px 0;
+                font-size: 20px;
+                font-weight: 500;
+                box-shadow: none;
+                padding-left: 25px;
+                &:after {
+                    content: '+';
+                    height: 0;
+                    width: 0;
+                    position: absolute;
+                    left: 0;
+                    top: 5px;
+                    transform: none;
+                }
+            }
+            .accordion-button:not(.collapsed)::after {
+                content: '-';
+            }
+        }
+        .accordion-body {
+            padding: 0;
+        }
+    }
+}

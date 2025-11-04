@@ -1,0 +1,103 @@
+
+/*--------------------------------------------
+* CONTACT CSS TWO
+--------------------------------------------*/
+.cdx-form-wrap-2 {
+    background-color: var(--sky-1); 
+    padding: 20px;
+}
+
+.cdx-form-style-2 {
+    background-color: var(--white);
+    padding: 50px;
+    box-shadow: 0px 30px 20px 0px rgba(3, 6, 17, 0.14); 
+    @media #{$sm} {
+        padding: 20px;
+    }
+    .cdx-title {
+        color: var(--dark); 
+        font-size: 40px; 
+        font-weight: 700; 
+        padding-bottom: 10px;
+        @media #{$md} {
+            font-size: 36px;
+        }
+        @media #{$sm} {
+            font-size: 30px;
+            padding-bottom: 0;
+        }
+    }
+    .cdx-label {
+        color: var(--dark);  
+        font-size: 14px; 
+        font-weight: 500; 
+        padding-bottom: 10px;
+    }
+    .cdx-input-rang {
+        background-color: #03061110; 
+    }
+    input[type=range] {
+        accent-color: #030611;
+    }
+    .cdx-select {
+        color: #03061150;  
+        font-size: 14px; 
+        font-weight: 500;  
+        appearance: none;
+        background-image: url(../images/icons/arrow-down-2.svg);
+        background-repeat: no-repeat;
+        background-position: 96% 50%;
+    }
+    .cdx-single-input { 
+        display: block;
+        border: 0;
+        outline: 0;
+        width: 100%;
+        padding: 11px 20px;
+        background-color: #EFEFEF;
+        margin-bottom: 10px;
+        &::placeholder { 
+            color: #03061150;  
+            font-size: 14px; 
+            font-weight: 500;  
+        }
+        &:focus {
+            border: 0;
+            outline: 0;
+        }
+    }
+    .cdx-form-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        @media #{$sm} {
+            flex-wrap: wrap;
+        }
+    }
+    .cdx-btn-submit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        border: 0;
+        padding: 14px 30px;
+        color: var(--dark); 
+        font-size: 15px; 
+        font-weight: 500; 
+        background-color: var(--primary); 
+        transition: var(--transition);
+        .cdx-icon {
+           transition: var(--transition);    
+        }
+        &:hover {
+            background-color: var(--dark);
+            color: var(--white);
+            .cdx-icon {
+                filter: invert(1);
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,53 @@
+/*--------------------------------------------
+* HEADER CSS ONE
+--------------------------------------------*/
+.cdx-navbar-area-1 {
+    padding: 5px 50px;
+    margin-top: 35px;
+    position: relative;
+    z-index: 3;
+    @media #{$lg}{
+        padding: 0;
+    }
+    .navbar {
+        background-color: var(--dark);
+        padding: 0 30px;
+        @media #{$md}{
+            padding: 0 15px;
+        }
+    }
+    .cdx-navbar-menu { 
+        @media #{$lg}{
+            display: none;
+        } 
+    }
+}
+
+.cdx-right-bar-phone {
+    min-width: 160px;
+    .cdx-icon {
+        height: 50px;
+        width: 50px;
+        background-color: var(--primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 12px;
+    }
+    .cdx-phone {
+        .cdx-title {
+            color: var(--white);
+        }
+        .cdx-link {
+            color: var(--gray); 
+            font-size: 14px; 
+            font-weight: 500; 
+            &:hover {
+                color: var(--white);
+            }
+            @media #{$xl}{
+                font-size: 14px;
+            }
+        }
+    }
+}

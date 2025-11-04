@@ -1,0 +1,46 @@
+/*--------------------------------------------
+* TESTIMONIAL CSS THREE
+--------------------------------------------*/
+.cdx-testimonial-item-3 {
+    background-color: #DBEFEC;
+    padding: 40px;
+    
+    .cdx-review {
+        display: inline-flex;
+        align-items: center;
+        gap: 3px; 
+    }
+    
+    .cdx-text {
+        color: rgba(4, 6, 24, 0.60);  
+        font-family: var(--font-inter);
+        font-size: 15px; 
+        font-weight: 500;
+        padding: 5px 0px 20px;
+    }
+    .cdx-name {
+        color: var(--dark); 
+        font-family: var(--font-inter);
+        font-size: 16px; 
+        font-weight: 600;  
+        line-height: 1;
+    }
+    .cdx-designation {
+        color: rgba(4, 6, 24, 0.60); 
+        font-family: var(--font-inter);
+        font-size: 14px; 
+        font-weight: 500; 
+        line-height: 1
+    }
+    .cdx-client-wrap {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .cdx-avatar-wrap {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+}

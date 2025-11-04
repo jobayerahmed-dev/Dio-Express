@@ -1,0 +1,101 @@
+/*--------------------------------------------
+* SERVICE CSS NINE
+--------------------------------------------*/
+
+
+.cdx-service-area-9 {
+    background-color: var(--green);
+    .cdx-section-title {
+        color: var(--white);
+    }
+    .cdx-video {
+        position: relative;
+        z-index: 9;
+        .cdx-play-wrap {
+            width: 140px;
+            height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--white);
+            border-radius: 100px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            @media #{$lg} { 
+                width: 100px;
+                height: 100px;
+            }
+            @media #{$sm} { 
+                width: 70px;
+                height: 70px;
+            }
+            
+        }
+    }
+}
+
+.cdx-service-card-9 {
+    background-color: #124c4c;
+    display: grid;
+    grid-template-columns: 120px auto;
+    gap: 40px;
+    transition: var(--transition);
+    @media #{$xl} {
+      grid-template-columns: 100px auto;
+      gap: 20px;  
+    }
+    @media #{$lg} {
+      grid-template-columns: 100px auto;
+      gap: 15px;  
+    }
+    .cdx-icon {
+        transition: var(--transition);
+    }
+    &:hover {
+        .cdx-icon {
+            transform: scale(0.9);
+        }
+    }
+    .cdx-icon-wrap {
+        border-right: 1px solid #FDFF30;
+        padding: 37px;
+        height: 108px;
+        display: flex;
+        align-items: center;
+        @media #{$lg} {
+            padding: 30px;
+        }
+    }
+    .cdx-details {
+        padding: 19px 0px;
+    }
+    .cdx-title {
+        color: var(--white);  
+        font-size: 22px; 
+        font-weight: 600; 
+        transition: var(--transition);
+        &:hover {
+            color: var(--primary);
+        }
+        @media #{$lg} {
+            font-size: 18px;
+        }
+    }
+    .cdx-btn-service {
+        color: var(--white);   
+        font-size: 14px; 
+        font-weight: 500; 
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        transition: var(--transition);
+        &:hover {
+            color: var(--primary);
+            .cdx-btn-icon {
+                filter: brightness(0) saturate(100%) invert(79%) sepia(56%) saturate(2612%) hue-rotate(3deg) brightness(102%) contrast(99%);
+            }
+        }
+    }
+}

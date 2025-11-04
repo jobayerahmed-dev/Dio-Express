@@ -1,0 +1,104 @@
+
+/*--------------------------------------------
+* HERO CSS FOUR
+--------------------------------------------*/
+
+.cdx-hero-area-4 {
+    margin: 0 100px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    @media #{$lg} {
+        margin: 0;
+    }
+    @media #{$md} {
+        background-size: 0;
+        background-color: var(--green-3);
+    }
+   .cdx-shape{
+    position: absolute;
+    z-index: 1;
+    background-size: 100% 100%;
+    background-repeat: repeat-x;
+   }
+   .cdx-hero-image-1{
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    @media #{$md} {
+        display: none;
+    }
+    }
+    .cdx-hero-image-2{
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    @media #{$md} {
+        display: none;
+    }
+    }
+}
+
+.cdx-content-wrap{
+    position: relative;
+    padding: 180px 0 220px 180px;
+    text-align: center;
+    @media #{$md} {
+        padding: 100px 0;
+    }
+    .cdx-section-title{
+        color: var(--white);
+        font-size: 80px;
+        font-weight: 700;
+        @media #{$lg} {
+            font-size: 50px;
+        }
+        @media #{$sm} {
+            font-size: 30px;
+        }
+       }
+    .cdx-description {
+        padding: 0 130px;
+        color: var(--gray);
+        font-weight: 500;
+        line-height: 26px; 
+        padding-bottom: 50px;
+        @media #{$sm} {
+            padding: 0;
+            
+        }
+    }
+   }
+   .cdx-scrol-text{
+    position: relative;
+    float: right;
+    right: -65px;
+    top: 277px;
+    writing-mode: vertical-lr;
+    transform: rotateZ(180deg);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    &::before{
+        position: relative;
+        display: block;
+        bottom: 10px;
+        right: -10px;
+        background-color: var(--dark);
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        content: "";
+        
+    }
+    &::after{
+        position: relative;
+        display: block;
+        width: 1px;
+        height: 80px;
+        bottom: 89px;
+        left: -13px;
+        background-color: rgb(230, 230, 231);
+        content: "";
+    }
+}

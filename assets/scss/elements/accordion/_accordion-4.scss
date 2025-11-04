@@ -1,0 +1,50 @@
+/*--------------------------------------------
+* ACCORDION CSS FOUR
+--------------------------------------------*/
+.cdx-accordion-style-4 {
+    --bs-accordion-border-color: unset !important; 
+    .accordion-item {
+        background-color: #ECEDE3;
+        padding: 25px 30px;
+        margin-bottom: 30px;
+        border: 0;
+        border-radius: 0px;
+        @media #{$sm} {
+            padding: 25px 15px;
+        }
+    }
+    .accordion-button {
+        background-color: transparent;
+        color: #030611; 
+        font-size: 20px; 
+        border: 0;
+        font-weight: 500; 
+        padding: 0px;
+    }
+    .cdx-content {
+        color: #808589; 
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500; 
+        padding-top: 20px;
+    }
+    .accordion-item:first-of-type .accordion-button {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    .accordion-body {
+        padding: 0;
+    }
+    .accordion-button:focus { 
+        outline: 0;
+        box-shadow: 0px 0px 0px 0px;
+    }
+    .accordion-button::after { 
+        background-image: url(../images/team-page/icon/plus.svg);
+        background-repeat: no-repeat;
+        background-size: var(--bs-accordion-btn-icon-width);
+        transition: var(--bs-accordion-btn-icon-transition);
+    }
+    
+    
+}

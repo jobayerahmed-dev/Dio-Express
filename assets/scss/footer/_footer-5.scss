@@ -1,0 +1,64 @@
+/*--------------------------------------------
+* FOOTER CSS FIVE
+--------------------------------------------*/
+.cdx-footer-area-5{
+background-color: #0d2059;
+opacity: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+.cdx-footer-bottom{
+    background: rgba(255, 255, 255, 0.10);
+}
+}
+
+.cdx-cta-info-wrap {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    @media #{$md} {
+        flex-wrap: wrap;
+    }
+    position: relative;
+    bottom: -30px;
+    z-index: 10;
+    @media #{$md} {
+        bottom: 0;
+    }
+    input {
+        width: 85%;
+        padding: 20px 0;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        &:focus{
+            border: none;
+            outline: none;
+        }
+    }
+    .cdx-btn-primary {
+        padding: 20px 75px;
+        text-wrap: nowrap;
+        @media #{$sm} {
+            margin-top: 2px;
+        }
+    }
+    .cdx-cta-item {
+        height: 67px;
+        width: 100%;
+        padding-left: 40px;
+        background-color: var(--white);
+        @media #{$md} {
+            border: 1px solid var(--gray);
+        }
+        .cdx-icon {
+            background-color: var(--primary);
+        }
+    }
+    .cdx-icon-1 {
+        background-color: var(--primary);
+        padding: 13px 25px;
+        @media #{$md} {
+            display: none;
+        }
+    }
+}

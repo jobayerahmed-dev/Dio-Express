@@ -1,0 +1,18 @@
+.cdx-counter-area-2  {
+    .cdx-counter-area{
+        background: var( --marine);
+    }
+    .cdx-number {
+        color: var(--white);
+    }
+    .cdx-border-right {
+        border-right: 1px solid rgba(255, 255, 255, 0.14);
+        @media #{$md} {
+            border-right :none;
+        }
+        @media #{$sm} {
+            border-right :none;
+            border-bottom :1px solid rgba(255, 255, 255, 0.14);
+        }
+    }
+}

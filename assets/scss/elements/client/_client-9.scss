@@ -1,0 +1,60 @@
+/*--------------------------------------------
+* CLIENT CSS NINE
+--------------------------------------------*/
+
+.cdx-client-area-9 { 
+    .cdx-navigation-style-8 {
+        width: 100%;
+        position: absolute;
+        top: 40%;
+        .cdx-btn-navigation { 
+            &:nth-child(1) {
+                left: -25px;
+            } 
+        }
+    }
+}
+
+.cdx-client-slider-9 {
+    border: 1px solid #03061110; 
+    
+}
+
+.cdx-client-slide-9 { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #03061110; 
+    padding: 65px 60px; 
+    height: auto;
+    &:nth-child(5) {
+        border-right: 1px solid transparent; 
+    }
+}
+    
+.cdx-navigation-style-8 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 10px;
+    .cdx-btn-navigation {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--green);
+        position: relative;
+        z-index: 9; 
+        transition: var(--transition);
+        .cdx-icon {
+                transition: var(--transition);
+        }
+        &:hover {
+        background-color: #FDFF30;
+        .cdx-icon {
+            filter: brightness(0);
+            }
+        } 
+    }
+}

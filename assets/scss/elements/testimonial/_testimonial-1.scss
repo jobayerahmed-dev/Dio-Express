@@ -1,0 +1,79 @@
+/*--------------------------------------------
+* TESTIMONIAL CSS ONE
+--------------------------------------------*/
+.cdx-testimonial-item-card {
+    padding: 70px 120px 70px 80px;
+    background-color: var(--dark-3);
+    @media #{$xxl}{
+        padding: 60px;
+    }
+    @media #{$xs}{
+        padding: 30px;
+    }
+    .cdx-rating {
+        color: var(--primary);
+        margin-bottom: 15px;
+    }
+    .cdx-title {
+        font-size: 24px;
+        font-weight: 500;
+        color: var(--white);
+        margin-bottom: 0;
+    }
+    .cdx-description {
+        color: var(--gray);
+        font-weight: 500;
+        margin-top: 17px;
+        margin-bottom: 35px;
+    }
+    .cdx-author {
+        display: flex;
+        align-items: center;
+        img {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .cdx-details {
+            .cdx-name {
+                font-size: 14px;
+                font-weight: 500;
+                color: var(--white);
+                margin-bottom: 4px;
+            }
+            .cdx-designation {
+                font-size: 12px;
+                color: var(--gray);
+            }
+        }
+    }
+}
+
+
+.cdx-testimonial-area-1 {
+    padding-top: 300px;
+    @media #{$xxl}{
+        padding-top: 180px;
+    }
+    @media #{$sm}{
+        padding-top: 100px;
+    }
+}
+.cdx-testimonial-slider-1 {
+    position: relative;
+    padding-top: 50px;
+    @media #{$xxxl}{
+        margin-left: 340px;
+    }
+    .cdx-testimonial-slider-navigation {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        display: flex;
+        .cdx-slider-nav-btn {
+            margin-right: 5px;
+        }
+    }
+}

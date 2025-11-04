@@ -1,0 +1,64 @@
+/*--------------------------------------------
+* SERVICE CSS THREE
+--------------------------------------------*/
+
+.cdx-service-card-3 {
+    background: var(--white);
+    box-shadow: 4px 4px 10px 0px rgba(18, 16, 16, 0.1);
+    margin-bottom: 25px;
+    .cdx-thumb {
+        overflow: hidden; 
+        img {
+            width: 100%;
+            transform: scale(1.02);
+            transition: 0.7s;
+        }
+    }
+      .cdx-title {
+        background-color: var(--primary);
+        display: inline-block;
+        padding: 8px 25px;
+        font-size: 18px;
+        margin-bottom: 0; 
+        &:hover {
+            color: var(--dark);
+        }
+    }
+    .cdx-details { 
+        margin-top: -2px;
+        .cdx-description {
+            padding: 25px;
+        }
+        .cdx-info {
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 25px;
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &:hover {
+        .cdx-thumb {
+            img {
+                transform: scale(1.15);
+            }
+        }
+    }
+}
+
+.cdx-service-slider-2 {
+    .cdx-slider-pagination-wrap:after {
+        background-color: #c8b25761;
+    }
+    .cdx-slider-pagination-wrap .cdx-slider-bottom-pagination-2 {
+        background-color: #f0cd548a;
+    }
+    .cdx-slider-pagination-wrap .cdx-slider-bottom-pagination-2 .swiper-pagination-bullet:before {
+        opacity: 0.5;
+    }
+    .cdx-slider-pagination-wrap .cdx-slider-bottom-pagination-2 .swiper-pagination-bullet:after {
+        background-color: var(--white);
+    }
+}

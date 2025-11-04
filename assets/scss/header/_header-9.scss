@@ -1,0 +1,33 @@
+/*--------------------------------------------
+* HEADER CSS NINE
+--------------------------------------------*/
+.cdx-navbar-area-9 {
+    background-color: var(--green);
+    position: relative;
+    z-index: 999;
+    padding: 0px 315px 0px 160px;
+    @media #{$xxl} {
+         padding: 0px 20px 0px 20px;
+    }
+    
+}
+.cdx-menu-style-9 {
+    padding-left: 140px;
+    @media #{$xxl} {
+        padding-left: 0px;
+    }
+}
+.cdx-btn-arrow-right-3 { 
+    @media #{$sm} { 
+        display: none;
+    }
+}
+
+.cdx-menu-style-9 {
+    .cdx-menu-link {
+        color: var(--white);
+        &:hover {
+            color: var(--primary);
+        }
+    }
+}

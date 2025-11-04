@@ -1,0 +1,126 @@
+.cdx-preloader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  // cursor: none;
+  height: 100%;
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+
+  &::before,
+  &::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    background: var(--primary);
+    z-index: 99999;
+    transition: all 0.6s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+  }
+
+  &-text-loading {
+    font: bold 50px var(--font-montserrat);
+    text-align: center;
+    user-select: none;
+    position: relative;
+    z-index: 999999;
+    transition: all 0.3s ease;
+  }
+
+  &-text {
+    color: rgba(3, 6, 17, 0.2);
+    position: relative;
+
+    &:before {
+      content: attr(data-text);
+      color: var(--dark);
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transform: rotateY(-90deg);
+      animation: cdx-preloader-txt 4s infinite;
+    }
+
+    &:nth-child(2):before {
+      animation-delay: 0.2s;
+    }
+
+    &:nth-child(2):before {
+      animation-delay: 0.4s;
+    }
+
+    &:nth-child(3):before {
+      animation-delay: 0.6s;
+    }
+
+    &:nth-child(4):before {
+      animation-delay: 0.8s;
+    }
+
+    &:nth-child(5):before {
+      animation-delay: 1s;
+    }
+
+    &:nth-child(6):before {
+      animation-delay: 1.2s;
+    }
+
+    &:nth-child(7):before {
+      animation-delay: 1.4s;
+    }
+
+    &:nth-child(8):before {
+      animation-delay: 1.6s;
+    }
+
+    &:nth-child(9):before {
+      animation-delay: 1.8s;
+    }
+
+    &:nth-child(10):before {
+      animation-delay: 2s;
+    }
+  }
+
+  &.loaded {
+    .cdx-preloader-text-loading {
+      opacity: 0;
+    }
+
+    &::before {
+      transform: translateX(-101%);
+    }
+
+    &::after {
+      transform: translateX(101%);
+    }
+  }
+}
+
+@keyframes cdx-preloader-txt {
+  0%,
+  75%,
+  100% {
+    opacity: 0;
+    transform: rotateY(-90deg);
+  }
+
+  25%,
+  50% {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+}

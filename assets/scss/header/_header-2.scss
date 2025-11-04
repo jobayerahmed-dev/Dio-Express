@@ -1,0 +1,133 @@
+/*--------------------------------------------
+* HEADER CSS TWO
+--------------------------------------------*/
+.cdx-navbar-area-2 {
+    position: relative;
+    z-index: 99;
+    background-color: var(--dark);
+    border-top: 1px solid var(--dark-4);
+    @media #{$lg}{
+        padding: 0;
+    }
+    .navbar {
+        border-left: 1px solid var(--dark-4);
+        padding-left: 25px;
+    } 
+    .cdx-main-logo {
+        padding-left: 20px;
+    } 
+}
+
+ .cdx-cart-icon {
+    padding: 33px 34px;
+    border-left: 1px solid rgba(255, 255, 255, 0.14);
+    a img {
+        transition: var(--transition);
+    }    
+    &:hover img{
+           transform: scale(1.4);
+            filter: brightness(1.2);
+            transition: transform 0.3s ease, filter 0.3s ease;
+         
+    }
+    @media #{$sm}{
+        padding: 33px 20px;
+    }
+    
+}
+
+.cdx-navbar-top-2 { 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    padding: 10px 0px 5px;
+    @media #{$sm}{
+        padding: 15px 0px 20px;
+    }
+}
+
+// Social Info 
+.cdx-social-info {
+    display: inline-flex;
+    align-items: center;
+    gap: 24px;  
+    transition: var(--transition);
+    @media #{$xl}{
+        gap: 10px;
+    }
+    @media #{$sm}{
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+    .cdx-social-list {
+        // display: inline-flex;
+        // align-items: center;
+        // gap: 6px;
+        border-right: 1px solid rgba(255, 255, 255, 0.14);
+        padding-right: 24px;
+        transition: var(--transition);
+        .cdx-social-wrap{
+            display: inline-flex;
+            gap: 6px;
+            align-items: center;
+            &:hover{
+                transform: scale(1.06);
+                filter: brightness(1.2);
+                transition: transform 0.3s ease, filter 0.3s ease;
+            }
+        }
+        @media #{$sm}{
+            border-right: 0px solid rgba(255, 255, 255, 0.14);
+        }   
+    }
+.cdx-text {
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 14px;
+    font-weight: 500;
+    &:hover{
+        color: var(--primary);
+    }
+}
+}
+
+.cdx-select-country { 
+    background-color: transparent;
+    background-image: url(../images/home-2/icons/arrow-down-white.svg);
+    background-position: 75% 45%;
+    background-repeat: no-repeat;
+    -webkit-appearance: none;
+    border: 0;
+    outline: 0;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 600;
+    padding-right: 35px;
+    line-height: 1; 
+    position: relative;
+    border-right: 1px solid rgba(255, 255, 255, 0.14);
+    &::after {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 1px;
+        height: 20px;
+        background-color: #FFFFFF24;
+        content: "";
+    }    
+    &:focus {
+        border: 0;
+        outline: 0;
+        border-right: 1px solid rgba(255, 255, 255, 0.14);
+    }
+    option {
+        color: var(--dark);
+    }
+    
+}
+
+.cdx-nav-hamburger-btn-2 {
+    background-color: #1c1f29;
+    padding: 33px 34px;
+    cursor: pointer;
+    @media #{$sm}{
+        padding: 33px 20px;
+    }
+}

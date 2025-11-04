@@ -1,0 +1,63 @@
+
+
+/*--------------------------------------------
+* BLOG CLASSIC CSS
+--------------------------------------------*/
+.cdx-classic-blog-area{
+
+.cdx-blog-default-style {
+    .cdx-post-title {
+        color: var(--dark);
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1.2;
+        padding: 20px 0;
+        @media #{$sm} {
+            font-size: 26px;
+        }
+    }
+    .cdx-post-thumb-wrap {
+        padding: 0px 0px 30px;
+    }
+    .cdx-post-thumb {
+        width: 100%;
+    }
+    .cdx-post-content {
+        color: var(--gray);
+        font-size: 16px;
+        font-weight: 500;
+        padding-bottom: 45px;
+    }
+   
+    .cdx-blog-post-meta {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .cdx-post-item {
+            color: var(--gray);
+            font-size: 15px;
+            font-weight: 500;
+            border: 1px solid var(--gray-9); 
+            background: rgba(3, 6, 17, 0.00);
+            display: inline-flex;
+            gap: 8px;
+            align-items: center;
+            padding: 2px 17px 2px 17px;
+            position: relative;
+            &:nth-child(1) { 
+                padding: 2px 17px 2px 28px; 
+                &::before {
+                    position: absolute;
+                    top: 10px;
+                    left: 17px;
+                    width: 5px;
+                    height: 5px;
+                    background-color: var(--gray);
+                    border-radius: 100px;
+                    content: "";
+                }
+            }
+        } 
+    }
+}
+}

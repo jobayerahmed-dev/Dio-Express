@@ -1,0 +1,64 @@
+/*--------------------------------------------
+* TESTIMONIAL CSS FIVE
+--------------------------------------------*/
+.cdx-testimonial-area-6 { 
+    background-color: var(--yellow-2);
+}
+
+.cdx-testimonial-slider-6 {
+    padding-bottom: 55px;
+    padding-right: 15px;
+}
+
+.cdx-testimonial-item-6 {
+    background-color: var(--white);
+    border-radius: 20px;
+    border: 2px solid var(--dark); 
+    box-shadow: 10px 10px 3px 0px rgba(29, 29, 29, 0.10);
+    padding: 50px 40px 70px;
+    .cdx-content {
+        color: #1D1D1D70; 
+        font-size: 16px; 
+        font-weight: 500; 
+        padding: 15px 0px 40px;
+    }
+}
+
+.cdx-review-btn {
+    background-color: #EFE0B2;
+    display: inline-block;
+    padding: 10px 37px;
+    color: #616161; 
+    font-size: 14px; 
+    font-weight: 500; 
+    border-radius: 100px;
+    .cdx-link {
+        color: var(--green);
+        &:hover {
+            color: var(--dark);
+        }
+    }
+}
+
+// navigation-style-9
+.cdx-navigation-style-9 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .cdx-btn-navigation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        border: 1px solid #1D1D1D14;
+        transition: var(--transition);
+        &:hover {
+            background-color: var(--green);
+            .cdx-icon {
+                filter: invert(1);
+            }
+        }
+    }
+}

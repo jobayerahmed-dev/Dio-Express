@@ -1,0 +1,98 @@
+/*--------------------------------------------
+* CONSULTATIONS CSS
+--------------------------------------------*/
+.cdx-consultation-area { 
+    .wrap { 
+        background-color: #EBECF3;   
+    } 
+}
+
+.cdx-consultation-map {
+    margin-bottom: -6px;
+    .map {
+        width: 100%;
+    }
+}
+
+
+.cdx-consultation-form.cdx-style-2 { 
+    padding: 0px 100px 30px 145px; 
+    @media #{$lg} {
+        padding: 50px 0px;
+    }
+    @media #{$md} {
+         padding: 50px 0px 0px;
+    }
+}
+.cdx-consultation-form { 
+    padding: 0px 100px 0px 145px; 
+     @media #{$lg} {
+        padding: 0px;
+     }
+    @media #{$md} {
+        padding-top: 40px;
+    }
+    .cdx-section-title {
+        padding: 20px 0px 10px;
+    }  
+    
+    .cdx-consultation-input {
+        display: block;
+        width: 100%;
+        border: 0;
+        outline: 0;
+        padding: 10px 10px 10px 0px;
+        background-color: transparent; 
+        color: #030611; 
+        &::placeholder {
+            color: #03061150; 
+            font-size: 16px; 
+            font-weight: 400; 
+        }
+        &:focus {
+            outline: 0;
+            border: 0;
+        }
+    }
+    .textarea {
+        min-height: 114px;
+    }
+    .cdx-icon {
+        padding-top: 3px;
+    }
+    .cdx-btn-primary { 
+        gap: 12px;
+        background-color: #C73F34;
+        color: var(--white);
+    }
+}
+
+.cdx-Consultation-block {
+    border: 1px solid #03061114;
+    padding: 7px 20px;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+
+.cdx-section-subtext {
+    color: #C73F34; 
+    font-size: 15px; 
+    font-weight: 500;
+    border: 1px solid rgba(199, 63, 52, 0.14);
+    background: rgba(199, 63, 52, 0.00);
+    backdrop-filter: blur(1px);
+    padding: 8px 20px 8px 30px;
+    position: relative;
+    &::before {
+        position: absolute;
+        top: 13px;
+        left: 14px;
+        width: 6px;
+        height: 6px;
+        background-color: #C73F34;
+        border-radius: 100px;
+        content: "";
+    }
+}

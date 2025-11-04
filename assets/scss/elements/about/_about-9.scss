@@ -1,0 +1,162 @@
+/*--------------------------------------------
+* ABOUT CSS NINE
+--------------------------------------------*/
+
+.cdx-about-area-9 {
+    padding-top: 405px;
+    margin-top: -15%;
+    @media #{$lg} {
+        padding-top: 280px;
+    }
+    @media #{$md} {
+        padding-top: 230px;
+    }
+    @media #{$sm} {
+        padding-top: 130px;
+    }
+    background-color: var(--white);
+        
+    .cdx-subtext {
+        color: #FE7535; 
+        font-size: 20px; 
+        font-weight: 600; 
+        line-height: 1.5;
+        text-decoration: underline;
+        padding: 15px 0px 20px;
+        @media #{$lg} {
+            padding: 10px 0px 10px; 
+        }
+    }
+    .cdx-content {
+        color: #808589;
+        font-size: 16px;
+        font-weight: 500;
+        padding-bottom: 40px; 
+        display: inline-block;
+        @media #{$lg} {
+           padding-bottom: 15px;
+        }
+    }
+   
+    .cdx-about-bio {
+        display: grid;
+        grid-template-columns: 40px auto;
+        gap: 10px;
+        align-items: center; 
+        @media #{$lg} {
+            margin-bottom: 20px;
+        }
+    }
+    .cdx-ceo-img {
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        border-radius: 100px;
+        img {
+            width: auto;
+            height: 100%;
+        }
+    }
+    .cdx-list {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        color: #040E1F;  
+        font-size: 15px; 
+        font-weight: 500; 
+        margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+.cdx-about-bio {
+    background-color: #fff1eb;
+    padding: 20px;
+    .cdx-details {
+        padding-top: 10px;
+    }
+    .cdx-name {
+        color: #030611;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 0;
+        display: inline-block;
+    }
+    .cdx-designation {
+        color: rgba(4, 6, 24, 0.60); 
+        font-size: 14px; 
+        font-weight: 500; 
+    }
+}
+
+.cdx-video-box { 
+    position: relative;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    @media #{$sm} {
+        gap: 20px;  
+    }
+    @media #{$xs} {
+        flex-wrap: wrap;
+        gap: 0px;
+    } 
+    .cdx-left-inner {
+        margin-top: 20px;
+    }
+    .cdx-right {
+        padding-right: 45px;
+        @media #{$xl} {
+            padding-right: 0px;
+        }
+    }
+    .cdx-img-1 {
+        @media #{$xs} { 
+            width: 100%;
+        }
+    }
+    .cdx-img-2 {
+        @media #{$xs} { 
+            width: 100%;
+        }
+    }
+     .cdx-video {
+        position: relative; 
+        margin-top: 20px;
+        .cdx-text {
+            color: var(--white); 
+            font-size: 20px; 
+            font-weight: 600; 
+            line-height: 1.4;
+            position: absolute;
+            padding-right: 30px;
+            top: 20px;
+            left: 30px;
+            @media #{$lg} {
+                font-size: 17px;
+            }
+            @media #{$sm} {
+                font-size: 20px;
+            }
+        }
+    }
+    .cdx-play-wrap {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--white);
+        border-radius: 100px;
+        position: absolute;
+        bottom: 40px;
+        left: 30px;
+        .cdx-icon {
+            width: 14px;
+        }
+        @media #{$lg} {
+         bottom: 20px;
+        }
+    }
+}

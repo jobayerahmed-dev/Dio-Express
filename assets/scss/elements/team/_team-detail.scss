@@ -1,0 +1,208 @@
+/*--------------------------------------------
+* TEAM DETAIL CSS
+--------------------------------------------*/
+
+.cdx-team-detail-box {
+    .cdx-thumb {
+        padding-bottom: 20px;
+    }
+    .cdx-name {
+        color: #030611;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 1;
+        display: block; 
+    }
+    .cdx-designation {
+        color: #1E1E2F60;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .cdx-info-list {
+        border-bottom: 1px solid #D9D9D9;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+        &:nth-child(1) {
+             padding-top: 10px;
+            border-top: 1px solid #D9D9D9;
+        }
+    }
+    .cdx-info-text {
+        color: #808589;
+        font-size: 13px;
+        font-weight: 500;
+        display: block;
+    }
+    .cdx-info-link {
+        color: #030611; 
+        font-size: 15px;
+        font-weight: 500; 
+        display: inline-block;
+        transition: var(--transition);
+        &:hover {
+            color: #FE7535;
+        }
+    }
+}
+
+.cdx-social-media-radius {
+    padding-top: 20px;
+    .cdx-social-link-radius {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+        border: 1px solid #1E1E2F14;
+        &:hover {
+            background-color: #356DF1;
+            .cdx-icon {
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+}
+.cdx-team-detail-content { 
+    padding-left: 30px;
+    @media #{$lg} {
+      padding-left: 0px;   
+    }
+    .cdx-sub-title {
+        color: #1E1E2F; 
+        font-size: 24px; 
+        font-weight: 600; 
+        line-height: 1.2;
+    }
+    .cdx-content {
+        color: #808589;
+        font-size: 16px; 
+        font-weight: 500;
+        padding-bottom: 30px;
+    }
+    .cdx-features-list {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #040E1F;   
+        font-size: 15px; 
+        font-weight: 500;
+        padding-bottom: 15px;
+        &:last-child {
+            padding-bottom: 0px;
+        }
+    }
+}
+
+
+
+// Skillbar style 
+.cdx-skills-bar{    
+    max-width: 520px;
+    .cdx-bar{
+        margin: 14px 0px;
+        &:first-child {
+            margin-top: 0px;
+        }
+    }
+    .cdx-info{
+        margin-bottom: 5px; 
+    }
+    .cdx-title {
+        color:#030611;
+        font-size: 12px;
+        font-weight: 500;
+        opacity: 0;
+        animation: showText 0.5s 1.5s linear forwards;
+    }
+    .cdx-progress-line{
+        position: relative;
+        height: 3px;
+        width: 100%;
+        background-color: #FE7535; 
+        transform: scaleX(0);
+        transform-origin: left;
+        box-shadow: inset 0px 1px 1px rgba(0,0,0,0.05),0px 1px rgba(255,255,255,0.8);
+        animation: animate 4s cubic-bezier(1,0,0.5,1) forwards; 
+        span{
+            height: 100%;
+            width: 100%;
+            background: #FE7535;
+            position: absolute; 
+            transform: scaleX(0);
+            transform-origin: left;
+            animation: animate 2s 2s  cubic-bezier(1,0,0.5,1) forwards;
+        }
+
+    } 
+}
+
+
+@keyframes showText{
+	100%{
+		opacity: 1;
+	}
+}
+
+ 
+
+@keyframes animate{
+	100%{
+		transform: scaleX(1);
+	}
+
+}
+
+.cdx-progress-line.cdx-pointer-1 span{
+	width: 92%;
+}
+
+.cdx-progress-line.cdx-pointer-2 span{
+	width: 85%;
+}
+
+.cdx-progress-line.cdx-pointer-3 span{
+	width: 72%;
+}
+
+
+.cdx-bar .cdx-progress-line span::before{
+	position: absolute;
+    content: "";
+    right: 0;
+    top: -5px;
+    height: 12px;
+    width: 2px;
+    background-color: #030611;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards; 
+}
+
+.cdx-bar .cdx-progress-line span::after{
+	position: absolute;
+	right: 0;
+	top: -28px; 
+	color: #1E1E2F; 
+    font-size: 12px; 
+    font-weight: 500; 
+	opacity: 0;
+	animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText2{
+	100%{
+		opacity: 1;
+	}
+}
+
+.cdx-progress-line.cdx-pointer-1 span::after{
+	content: "90%";
+}
+
+.cdx-progress-line.cdx-pointer-2 span::after{
+	content: "85%";
+}
+
+.cdx-progress-line.cdx-pointer-3 span::after{
+	content: "72%";
+}

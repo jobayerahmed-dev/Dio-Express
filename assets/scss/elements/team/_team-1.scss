@@ -1,0 +1,101 @@
+/*--------------------------------------------
+* TEAM CSS ONE
+--------------------------------------------*/
+
+
+.cdx-team-item {
+    margin-bottom: 30px;
+    transition: var(--transition);
+    &:hover {
+        .cdx-thumb {
+            transform: scale(1.1);
+        }
+    }
+    .cdx-thumb {
+        transition: var(--transition);
+    }
+    .cdx-thumb-wrap {
+        margin-bottom: 20px;
+        position: relative;
+        overflow: hidden;
+        .cdx-social-item {
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            li {
+                list-style: none;
+                height: 40px;
+                width: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: var(--white);
+                margin-bottom: 4px;
+                transition: all 400ms ease;
+                transition-delay: 150ms;
+                a {
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                &:nth-child(1){
+                    background-color: var(--dark);
+                }
+                &:nth-child(2){
+                    transform: translateY(-20px);
+                    visibility: hidden;
+                    opacity: 0;
+                }
+                &:nth-child(3){
+                    transform: translateY(-30px);
+                    visibility: hidden;
+                    opacity: 0;
+                }
+                &:nth-child(4){
+                    transform: translateY(-40px);
+                    visibility: hidden;
+                    opacity: 0;
+                }
+            }
+            &:hover {
+                li {
+                    visibility: visible;
+                    opacity: 1;
+                    &:nth-child(1){
+                        background-color: var(--primary);
+                        img {
+                            filter: brightness(0);
+                        }
+                    }
+                    &:nth-child(2){
+                        transform: translateY(0);
+                    }
+                    &:nth-child(3){
+                        transform: translateY(0);
+                    }
+                    &:nth-child(4){
+                        transform: translateY(0);
+                    }
+                    &:hover {
+                        background-color: var(--primary);
+                    }
+                }
+            }
+        }
+    }
+    .cdx-details {
+        .cdx-name {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .cdx-designation {
+            font-weight: 500;
+            color: var(--gray);
+        }
+    }
+}

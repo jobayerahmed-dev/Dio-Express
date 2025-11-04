@@ -1,0 +1,24 @@
+/*--------------------------------------------
+* VIDEO CSS ONE
+--------------------------------------------*/
+
+.cdx-video-area-1 {
+    padding-top: 260px;
+    overflow: hidden;
+    @media #{$md} {
+        padding-top: 200px;
+    }
+    @media #{$sm} {
+        padding-top: 80px;
+    }
+    .cdx-heading-text-slider {
+        margin-bottom: -68px;
+        padding-top: 30px;
+        @media #{$xl} {
+          margin-bottom: -50px;  
+        }
+        .cdx-large-title {
+            color: var(--dark);
+        }
+    }
+}

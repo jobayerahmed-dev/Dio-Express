@@ -1,0 +1,116 @@
+/*--------------------------------------------
+* HEADER CSS THREE
+--------------------------------------------*/
+.cdx-navbar-area-3 {
+    position: relative;
+    z-index: 3;
+    background-color: var(--dark);
+    @media #{$lg}{
+        padding: 0;
+    }
+    .cdx-btn-radius-2 {
+        @media #{$sm} { 
+            display: none;
+        }
+    }
+    .navbar {
+        background-color: var(--primary);
+        @media #{$xxl} {
+            margin-left: 190px; 
+        }
+        @media #{$xl} {
+            margin-left: 110px; 
+        }
+        @media #{$lg} {
+            margin-left: 220px; 
+        }
+         @media #{$sm} {
+            background-color: transparent;
+            margin-left: 0px; 
+         }
+        &:after {
+            content: '';
+            position: absolute;
+            right: -50%;
+            top: 0;
+            background-color: var(--primary);
+            height: 100%;
+            width: 50%;
+             @media #{$sm} {
+                display: none;
+            }
+        }
+    }
+    .cdx-main-logo {
+        margin-left: -216px;
+        margin-top: -39px;
+        @media #{$xxl} {
+            margin-top: -7px;
+        }
+        @media #{$sm} {
+            margin-left: 0px;
+            margin-top: -0px;
+        }
+    }
+    .cdx-social-info {
+        background: linear-gradient(-90deg, #247C05 -14.35%, rgba(36, 124, 5, 0) 100%);
+        padding: 10px 30px 10px 5px;
+        clip-path: polygon(100% 0%, 96% 50%, 100% 100%, 0% 100%, 0% 50%, 0% 0%);
+        @media #{$sm} {
+             padding: 10px 0px 10px 0px;
+        }
+        .cdx-social-list {
+            @media #{$md} {
+                padding-right: 15px;
+            }
+            &:last-child { 
+                border-right: 0px;
+            }
+        }
+    }
+    .cdx-search-form{
+        background-color: rgba(255, 255, 255, 0.9);;
+        input {
+        background-color: rgba(3, 6, 17, 0.9);
+        color: var(--white);
+        }
+    }
+}
+
+.cdx-navbar-menu.cdx-style-3 { 
+    transform: translate(-100px, 0px); 
+    @media #{$xxl} {
+        transform: translate(-0px, 0px); 
+    }
+    .cdx-menu-link {
+        color: var(--Black-60, rgba(18, 19, 20, 0.60)); 
+        &:hover {
+            color: var(--dark);
+        }
+    }
+    .cdx-menu-item-has-children:after {
+        right: -17px;
+        width: 12px;
+        background-image: url(../images//home-3/icon/arrow-down.svg);
+    }
+}
+
+.cdx-search-wrap {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    background-color: #03061110;
+    border-radius: 50%;
+    z-index: 100;
+}
+#search_close {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

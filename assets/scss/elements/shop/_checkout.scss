@@ -1,0 +1,192 @@
+/*--------------------------------------------
+* CHECKOUT CSS
+--------------------------------------------*/
+.cdx-checkout-top {
+    .cdx-section-content {
+        border: 1px solid rgba(4, 6, 24, 0.10);
+        display: block;
+        padding: 22px 30px;
+        margin-bottom: 10px;
+        background-color: var(--white);
+        @media #{$xs} {
+            font-size: 15px;
+            padding: 22px 10px;
+        }
+        .cdx-link {
+            color: #FE7535; 
+        }
+    }
+}
+.cdx-checkout-form {
+    max-width: 740px;
+    @media #{$lg} {
+        max-width: 100%;
+    }
+    .cdx-title {
+        color: var(--dark); 
+        font-size: 30px; 
+        font-weight: 600; 
+        padding-bottom: 20px;
+    }
+    .cdx-label {
+        color: var(--dark); 
+        font-size: 16px; 
+        font-weight: 500; 
+        padding-bottom: 5px;
+    }
+    .cdx-form-block {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        @media #{$sm}{
+            flex-wrap: wrap;
+        }
+    }
+    .cdx-single-block {
+        width: 100%; 
+    }
+    .cdx-single-input {
+        display: block;
+        width: 100%;
+        border: 1px solid rgba(4, 6, 24, 0.10);
+        background-color: var(--white);
+        padding: 12px 20px;
+        margin-bottom: 14px;
+        &::placeholder {
+            color: var(--gray); 
+            font-size: 14px; 
+            font-weight: 500; 
+        }
+    }
+    .textarea {
+        min-height: 200px;
+        @media #{$sm}{
+            min-height: 150px;
+        }
+    }
+    .cdx-select {
+        color: var(--gray); 
+        font-size: 14px; 
+        font-weight: 500; 
+    }
+}
+
+.cdx-order-sidebar {
+    border: 1px solid rgba(17, 16, 19, 0.14); 
+    background-color: var(--white);  
+    .cdx-order-title {
+        color: var(--dark); 
+        font-size: 20px; 
+        font-weight: 500; 
+        background-color: #ECEDE3;
+        padding: 20px 30px;
+        display: block;
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .cdx-input-radio-btn {
+        accent-color: #DE6815;
+    }
+    .cdx-checkbox-wrap {
+        border-top: 1px solid rgba(17, 16, 19, 0.14); 
+        padding-top: 28px;
+        margin-top: 20px;
+        margin-bottom: 22px;
+    }
+    .cdx-payment-text {
+        color: var(--dark); 
+        font-size: 12px; 
+        font-weight: 400; 
+        text-decoration-line: underline;
+    }
+    .cdx-payment-list {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 0px 20px 0px 10px;
+    }
+    .cdx-payment-icon {
+        border: 1px solid rgba(17, 16, 19, 0.14); 
+        width: 34px;
+        height: 24px;
+        padding: 2px;
+        object-fit: contain; 
+    }
+    .cdx-order-list {
+        padding: 20px 30px 15px;
+    }
+    .cdx-btn-primary {
+        width: 100%; 
+    }  
+    .cdx-text-toltip {
+        position: relative;
+        color: var(--gray); 
+        font-size: 12px; 
+        font-weight: 500; 
+        border: 1px solid rgba(17, 16, 19, 0.14); 
+        padding: 20px 30px 20px 20px;
+        margin-bottom: 45px;
+        margin-top: 10px;
+        &::before {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 20px; 
+            height: 12px;
+            background-image: url(../images/shop-page/icon/polygon.svg);
+            background-repeat: no-repeat;
+            content: "";
+        }
+    }
+    .cdx-details-btm {
+        padding: 0px 30px;
+        padding-bottom: 65px;
+        @media #{$xl} {
+            padding-bottom: 33px;
+        }
+    }
+    .cdx-shipping-list {
+        padding-bottom: 15px;
+    }
+
+    .cdx-input-radio {
+        color: var(--gray); 
+        font-size: 14px; 
+        font-weight: 500; 
+    }
+    .cdx-subtitle {
+        color: var(--dark); 
+        font-size: 15px; 
+        font-weight: 500; 
+    }
+    .cdx-list-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--gray); 
+        font-size: 14px; 
+        font-weight: 500; 
+        border-bottom: 1px solid rgba(4, 6, 24, 0.10); 
+        padding-bottom: 19px;
+        margin-bottom: 20px; 
+    }    
+    .cdx-list-price {
+        color: var(--dark); 
+        font-size: 15px; 
+        font-weight: 500; 
+    }   
+    .cdx-total-price {
+        color: #FE7535; 
+        font-size: 15px;  
+        font-weight: 500; 
+    }
+    .cdx-shipping-inner {
+        display: grid;
+        grid-template-columns: 135px auto;
+        gap: 15px;
+        padding-bottom: 7px;
+        &:last-child {
+            padding-bottom: 0px;
+        }
+    }
+}

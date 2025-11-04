@@ -1,0 +1,99 @@
+
+/*--------------------------------------------
+* SERVICE CSS TEN
+--------------------------------------------*/
+
+.cdx-service-area-10 {
+     @media #{$xl} {
+        padding-left: 15px;
+     }
+    @media #{$md} {
+        padding: 0px 15px;
+    }
+    
+}
+
+.cdx-service-card-10 {
+   border: 1px solid #030611;
+   background: rgba(210, 204, 180, 0.00);
+   padding: 50px 70px 55px 70px;
+   transition: var(--transition);
+    @media #{$xxl} {        padding: 32px 16px;
+    }
+    .cdx-icon {
+        transition: var(--transition);
+    }
+    &:hover {
+        background-color: #D2CCB4;;
+        .cdx-icon {
+            transform: scale(0.9);
+        }
+    }
+    .cdx-icon-wrap {
+        border-right: 1px solid #FDFF30;
+        padding: 37px;
+        @media #{$lg} {
+            padding: 30px;
+        }
+    }
+    .cdx-details {
+        padding: 19px 0px;
+    }
+    .cdx-title {
+        color: #030611; 
+        font-size: 26px;
+        display: inline-block;
+        font-weight: 500;
+        line-height: 1.2;  
+        &:hover {
+            color: var(--primary);
+        }
+        @media #{$xxl} {
+            font-size: 24px;
+        }
+        @media #{$xl} {
+            font-size: 20px;
+            line-height: 1.4;
+        }
+        @media #{$lg} {
+            font-size: 18px;
+        }
+        @media #{$md} {
+            font-size: 24px;
+        }
+        @media #{$sm} {
+            font-size: 19px;
+        }
+    }
+    .cdx-content {
+        color: #03061150;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 25px 0px 15px;
+
+    }
+    
+    .cdx-btn-service {
+        color: #030611;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: normal;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        transition: var(--transition);
+        &:hover {
+            color: #03061150;
+            .cdx-btn-icon {
+                filter: brightness(0) saturate(100%) invert(57%) sepia(10%) saturate(183%) hue-rotate(164deg) brightness(90%) contrast(82%);
+            }
+        }
+    }
+}
+
+// Only used for 1280 screen 
+@media only screen and (min-width: 1280px) and (max-width: 1300px) {
+    .cdx-service-card-10 .cdx-title {
+        font-size: 18px; 
+    }
+}

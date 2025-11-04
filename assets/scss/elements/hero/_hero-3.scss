@@ -1,0 +1,114 @@
+
+/*--------------------------------------------
+* HERO CSS THREE
+--------------------------------------------*/
+
+.cdx-hero-area-3 {
+    background-color: #094712;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 170px 0px 260px;
+    position: relative;
+    @media #{$lg} {
+      padding: 125px 0px 100px;  
+    }
+    @media #{$sm}{
+        background-size: 0%;
+    }
+    .cdx-btn-arrow-box { 
+        gap: 12px;
+        padding: 10px 10px 10px 30px;
+    }
+    .cdx-hero-pagination {
+        left: 0%;
+        bottom: -181px !important;
+        @media #{$lg} {
+            bottom: -50px !important; 
+        }
+        @media #{$md} {
+            left: 7px;
+        }
+    }
+    .cdx-fraction-pagination {
+        color: var(--white); 
+    }
+    .cdx-navigation-style-3 {
+        position: absolute;
+        top: 47%;
+        right: 3%;
+        @media #{$lg} {
+            top: 25%;
+        }
+        @media #{$sm} {
+            top: 8%;
+        }
+        
+    }
+    
+}
+
+.cdx-hero-slide-3 {
+    .cdx-title {
+        color: var(--white); 
+        font-family: var(--font-montserrat);
+        font-size: 90px; 
+        font-weight: 800; 
+        line-height: 1.2;
+        display: inline-block;
+        text-transform: uppercase;
+        .cdx-title-mark {
+            color: var(--primary);
+        }
+        @media #{$xxl} {
+            font-size: 75px;
+        }
+        @media #{$lg} {
+            font-size: 60px;
+        }
+        @media #{$md} {
+            font-size: 40px;
+        }
+    }
+    .cdx-content {
+        color: #ffffff60;  
+        font-size: 20px; 
+        font-weight: 500; 
+        max-width: 800px;
+        padding: 0px 0px 45px;
+        @media #{$lg} {
+          max-width: 590px;
+          font-size: 16px; 
+        }
+        @media #{$md} {
+            max-width: 510px;
+        }
+    } 
+}
+
+.cdx-navigation-style-3 {
+    background-color: var(--primary);
+    padding: 8px 8px 8px 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 100px;
+    .cdx-btn-navigation {
+        width: 34px;
+        height: 34px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--dark);
+        border-radius: 100px;
+        transition: var(--transition);
+        &:hover{
+            transition: var(--transition);
+            background-color: var(--secondary);
+        }
+    }
+    .cdx-number-3 {
+        color: var(--dark); 
+        font-size: 15px; 
+        font-weight: 500; 
+    }
+}

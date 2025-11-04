@@ -1,0 +1,96 @@
+/*--------------------------------------------
+* PRICE CSS
+--------------------------------------------*/
+.cdx-price-card {
+    position: relative;
+    background-color: var(--white);
+    overflow: hidden;
+    transition: var(--transition);
+    border-radius: 10px;
+    &:hover {
+        background-color: #b5dcc2;
+        .cdx-btn-radius {
+            background-color: var(--primary);
+            color: var(--dark);
+        }
+        .cdx-icon {
+            filter: brightness(0);
+        }
+        .cdx-shape { 
+            opacity: 1;
+            visibility: visible;
+        }
+        .cdx-details {
+            border: 1px solid transparent; 
+        }
+        .cdx-list-item {
+            color: var(--dark);
+        }
+    }
+    .cdx-btn-radius {
+        transition: var(--transition);
+    }
+    .cdx-shape {
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+        opacity: 0;
+        visibility: hidden;
+        transition: var(--transition);
+    }
+    .cdx-price {
+        color: #14AD11; 
+        font-family: var(--font-montserrat);
+        font-size: 60px; 
+        font-weight: 700; 
+        line-height: 1;
+        border-radius: 10px 10px 0px 0px;
+        display: block;
+        width: 100%;
+        background-color: #E1E9F1;
+        padding: 50px;
+        margin: 0;
+        @media #{$lg} {
+            font-size: 45px;
+            padding: 40px;
+        }
+    }
+    .cdx-details {
+        border-radius: 0px 0px 10px 10px;
+        border: 1px solid #03061114; 
+        padding: 45px 50px 60px;
+        @media #{$lg} {
+            padding: 35px 20px 40px;
+        }
+    }
+   
+}
+
+.cdx-list-style-1 {
+    padding-bottom: 50px;
+    @media #{$lg} {
+        padding-bottom: 20px;
+    }
+    .cdx-list-item {
+        color: #03061170; 
+        font-size: 16px; 
+        font-weight: 500; 
+        padding-bottom: 12px;
+        padding-left: 20px;
+        position: relative;
+        transition: var(--transition);
+        &::before {
+            position: absolute;
+            top: 8px;
+            left: 0px;
+            width: 4px;
+            height: 4px;
+            border-radius: 100px;
+            background-color: #03061170;
+            content: "";
+        }
+        &:last-child {
+            padding-bottom: 10px;
+        }
+    }
+}

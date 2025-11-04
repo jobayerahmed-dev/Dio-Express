@@ -1,0 +1,46 @@
+/*--------------------------------------------
+* SERVICE CSS EIGHT
+--------------------------------------------*/
+.cdx-service-item-8 {
+    background-color: #0F313A;
+    border-right: 2px solid rgba(255, 255, 255, 0.14);
+    padding: 0 90px 80px 60px;
+
+    .cdx-icon {
+        padding: 70px 0;
+    }
+
+    .cdx-title {
+        color: var(--white);
+        font-size: 20px;
+        font-weight: 500;
+        &:hover{
+            color: var(--primary);
+        }
+    }
+
+    .cdx-subtext {
+        color: var(--gray);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+    }
+
+    @media #{$md} {
+        border-right: none;
+    }
+
+    @media #{$sm} {
+        border-bottom: 2px solid rgba(255, 255, 255, 0.14);
+    }
+}
+
+.service-box-8 {
+    &:last-child {
+        .cdx-service-item-8 {
+            border-right: none;
+            border-bottom: none;
+        }
+    }
+
+}

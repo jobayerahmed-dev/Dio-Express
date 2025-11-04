@@ -1,0 +1,26 @@
+
+/*--------------------------------------------
+* TESTIMONIAL CSS TEN
+--------------------------------------------*/
+
+.cdx-testimonial-area-10 {
+    border: 1px solid #030611;
+    background-color: #D2CCB4;
+    margin-left: 90px;
+    margin-right: 90px;
+    @media #{$xxl} {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .cdx-navigation-wrap-9 { 
+        top: 59%;
+    }
+    .cdx-name {
+        color: #030611; 
+    }
+    .cdx-testimonial-slide-9 {
+        .cdx-content {
+            font-size: 20px; 
+        }
+    }
+}

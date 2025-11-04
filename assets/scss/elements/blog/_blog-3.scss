@@ -1,0 +1,102 @@
+/*--------------------------------------------
+* BLOG CSS THREE
+--------------------------------------------*/
+.cdx-blog-area-3 {
+    padding-bottom: 170px;
+     .cdx-fraction-pagination {
+        bottom: -40px !important;
+        left: 50% !important; 
+        @media #{$sm}{
+            left: 4px !important;
+        }
+    }
+    @media #{$md}{
+      padding-bottom: 130px;
+    }
+}
+
+.cdx-blog-item-3 {
+    display: grid;
+    grid-template-columns: 260px auto;
+    align-items: center;
+    gap: 34px;
+    background-color: var(--sky-2);
+    overflow: hidden;
+    border-radius: 20px;
+    @media #{$sm}{
+      grid-template-columns: 1fr;  
+      gap: 20px;
+    }
+    .cdx-thumb {
+        width: 100%;
+    }
+    .cdx-details {
+        padding: 30px 40px 50px 0px;
+        @media #{$sm}{
+            padding: 30px 40px 50px 20px;
+        }
+    }
+    .cdx-meta {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    .cdx-meta-list {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--gray); 
+        font-size: 14px; 
+        font-weight: 500; 
+    }
+    .cdx-meta-link {
+        background-color: var(--primary);
+        color: var(--dark);
+        padding: 3px 11px;
+    }
+    .cdx-title {
+        color: var(--dark); 
+        font-family: var(--font-montserrat);
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.2;
+        display: inline-block; 
+        padding: 25px 0px 3px;
+
+        &:hover {
+            color: var(--primary);
+        }
+    }
+    .cdx-description {
+        color: #17161CB2; 
+        font-size: 15px; 
+        font-weight: 400; 
+        padding-bottom: 40px;
+        @media #{$xl} {
+            padding-bottom: 25px;
+        }
+    }
+    .cdx-btn-radius {
+        color: var(--dark);
+        background-color: var(--sky-3);
+        transition: var(--transition);
+        &:hover {
+            background-color: var(--primary);
+            color: var(--dark);
+        }
+    }
+}
+
+// fraction pagination style
+.cdx-fraction-pagination {
+    color: var(--dark);  
+    font-size: 14px; 
+    font-weight: 500; 
+    position: relative;
+}
+.pagination::after {
+  content: "•"; /* Or any other symbol you prefer */
+  position: absolute;
+  right: -10px; /* Adjust position */
+  top: 0;
+}

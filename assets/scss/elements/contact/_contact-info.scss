@@ -1,0 +1,59 @@
+/*--------------------------------------------
+* CONTACT INFO CSS
+--------------------------------------------*/
+
+.cdx-contact-info-item {
+    display: grid;
+    grid-template-columns: 60px auto;
+    gap: 15px;
+    background-color: #ECEDE3;
+    padding: 40px;
+    @media #{$xl} {
+       padding: 40px 15px; 
+    }
+    .cdx-icon-wrap {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #F7C600;
+        border-radius: 100px;
+    }
+    .cdx-title {
+        color: #030611;
+        font-size: 20px; 
+        font-weight: 500; 
+        color: #030611;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1;
+        padding-bottom: 0px;
+    }
+    .cdx-text {
+        color: #808589;
+        font-size: 16px;
+        font-weight: 500;
+        @media #{$lg} {
+         font-size: 12px;
+        }
+        @media #{$md} {
+            font-size: 14px;
+        }
+    }
+    .cdx-link {
+        color: #808589;
+        font-size: 16px;
+        font-weight: 500;
+        transition: var(--transition);
+        @media #{$lg} {
+            font-size: 12px;
+        }
+           @media #{$md} {
+            font-size: 14px;
+        }
+        &:hover {
+            color: #F7C600;
+        }
+    }
+}

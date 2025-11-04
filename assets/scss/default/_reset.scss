@@ -1,0 +1,438 @@
+a {
+    text-decoration: none;
+    color: var(--gray);
+    transition: 0.4s;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+}
+a:hover {
+    color: var(--primary);
+}
+
+ol,li {
+    list-style: none;
+}
+
+pre {
+    word-break: break-word;
+}
+
+a i {
+    padding: 0 2px;
+}
+
+img {
+    max-width: 100%;
+}
+button {
+    border: 0;
+    background-color: transparent;
+}
+
+/*input and button type focus outline disable*/
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+select:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #ddd;
+}
+
+code {
+    color: #faa603;
+}
+
+.cdx-site-main .cdx-comment-navigation,
+.cdx-site-main .cdx-posts-navigation,
+.cdx-site-main .cdx-post-navigation {
+    clear: both;
+}
+
+.cdx-comment-navigation .cdx-nav-previous,
+.cdx-posts-navigation .cdx-nav-previous,
+.cdx-post-navigation .cdx-nav-previous {
+    float: left;
+    width: 50%;
+}
+
+.cdx-comment-navigation .cdx-nav-next,
+.cdx-posts-navigation .cdx-nav-next,
+.cdx-post-navigation .cdx-nav-next {
+    float: right;
+    text-align: right;
+    width: 50%;
+}
+
+.cdx-comment-navigation .cdx-nav-previous > a,
+.cdx-posts-navigation .cdx-nav-previous > a,
+.cdx-post-navigation .cdx-nav-previous > a,
+.cdx-comment-navigation .cdx-nav-next > a,
+.cdx-posts-navigation .cdx-nav-next > a,
+.cdx-post-navigation .cdx-nav-next > a {
+    transition: 0.3s ease-in;
+}
+
+.cdx-comment-navigation .cdx-nav-previous:hover > a,
+.cdx-posts-navigation .cdx-nav-previous:hover > a,
+.cdx-post-navigation .cdx-nav-previous:hover > a,
+.cdx-comment-navigation .cdx-nav-next:hover > a,
+.cdx-posts-navigation .cdx-nav-next:hover > a,
+.cdx-post-navigation .cdx-nav-next:hover > a {
+    color: var(--primary);
+}
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.cdx-screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+    /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.cdx-screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    clip-path: none;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+    outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.cdx-alignleft {
+    float: left;
+    clear: both;
+    margin-right: 20px;
+}
+
+.cdx-alignright {
+    float: right;
+    clear: both;
+    margin-left: 20px;
+}
+
+.cdx-aligncenter {
+    clear: both;
+    display: block;
+    margin: 0 auto 1.75em;
+}
+
+.cdx-alignfull {
+    margin: 1.5em 0;
+    max-width: 100%;
+}
+
+.cdx-alignwide {
+    max-width: 1100px;
+}
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+
+.cdx-clear:before,
+.cdx-clear:after,
+.cdx-entry-content:before,
+.cdx-entry-content:after,
+.cdx-comment-content:before,
+.cdx-comment-content:after,
+.cdx-site-header:before,
+.cdx-site-header:after,
+.cdx-site-content:before,
+.cdx-site-content:after,
+.cdx-site-footer:before,
+.cdx-site-footer:after {
+    content: "";
+    display: table;
+    table-layout: fixed;
+}
+
+.cdx-clear:after,
+.cdx-entry-content:after,
+.cdx-comment-content:after,
+.cdx-site-header:after,
+.cdx-site-content:after,
+.cdx-site-footer:after {
+    clear: both;
+}
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+
+.cdx-sticky {
+    display: block;
+}
+
+.cdx-updated:not(.cdx-published) {
+    display: none;
+}
+
+.cdx-blog-pagination ul li {
+    display: inline-block;
+}
+
+.cdx-blog-pagination ul li + li {
+    margin: 0 5px;
+}
+
+.cdx-blog-pagination ul li {
+    display: inline-block;
+}
+
+.cdx-blog-pagination ul li + li {
+    margin: 0 5px;
+}
+
+.cdx-blog-pagination {
+    display: block;
+    width: 100%;
+}
+
+.cdx-blog-pagination ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.cdx-blog-pagination ul li a,
+.cdx-blog-pagination ul li span {
+    display: block;
+    padding: 3px 20px;
+    border: 1px solid #e2e2e2;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 600;
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+}
+
+.cdx-blog-pagination ul li span.current,
+.cdx-blog-pagination ul li a:hover {
+    background-color: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+
+.cdx-page-content .cdx-wp-smiley,
+.cdx-entry-content .cdx-wp-smiley,
+.cdx-comment-content .cdx-wp-smiley {
+    border: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+    max-width: 100%;
+}
+
+/* Make sure logo link wraps around logo image. */
+
+.cdx-custom-logo-link {
+    display: inline-block;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.cdx-wp-caption {
+    margin-bottom: 1.5em;
+    max-width: 100%;
+    clear: both;
+}
+.cdx-wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cdx-wp-caption .cdx-wp-caption-text {
+    margin: 0.8075em 0;
+}
+.cdx-wp-caption-text {
+    text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+
+.cdx-gallery {
+    margin-bottom: 1.5em;
+}
+.cdx-gallery-item {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+}
+.cdx-gallery-columns-2 .cdx-gallery-item {
+    max-width: 50%;
+}
+.cdx-gallery-columns-3 .cdx-gallery-item {
+    max-width: 33.33%;
+}
+.cdx-gallery-columns-4 .cdx-gallery-item {
+    max-width: 25%;
+}
+.cdx-gallery-columns-5 .cdx-gallery-item {
+    max-width: 20%;
+}
+.cdx-gallery-columns-6 .cdx-gallery-item {
+    max-width: 16.66%;
+}
+.cdx-gallery-columns-7 .cdx-gallery-item {
+    max-width: 14.28%;
+}
+.cdx-gallery-columns-8 .cdx-gallery-item {
+    max-width: 12.5%;
+}
+.cdx-gallery-columns-9 .cdx-gallery-item {
+    max-width: 11.11%;
+}
+.cdx-gallery-caption {
+    display: block;
+}
+
+/*----------------------------------------
+    # Unit test
+------------------------------------------*/
+
+.cdx-wp-link-pages a {
+    margin: 0 5px;
+    transition: 0.3s ease-in;
+}
+.cdx-wp-link-pages {
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
+.cdx-wp-link-pages span,
+.cdx-wp-link-pages a {
+    border: 1px solid #e2e2e2;
+    padding: 5px 15px;
+    display: inline-block;
+}
+.cdx-wp-link-pages .current,
+.cdx-wp-link-pages a:hover {
+    background-color: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+}
+.cdx-wp-link-pages span:first-child {
+    margin-right: 5px;
+}
+dl,
+ol,
+ul {
+    margin: 0;
+    padding: 0; 
+}
+.cdx-post-password-form input {
+    display: block;
+    border: 1px solid #e2e2e2;
+    height: 50px;
+    border-radius: 3px;
+    padding: 0 20px;
+}
+.cdx-post-password-form label {
+    font-weight: 600;
+    color: #333;
+}
+.cdx-post-password-form input[type="submit"] {
+    width: 100px;
+    height: 50px;
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+.cdx-post-password-form input[type="submit"]:hover {
+    background-color: #121a2f;
+}
+.cdx-media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+.cdx-media-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.cdx-footer-widget .table td,
+.cdx-footer-widget .table th {
+    padding: 0.5rem !important;
+}
+* {
+  margin: 0;
+  padding: 0;  
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}

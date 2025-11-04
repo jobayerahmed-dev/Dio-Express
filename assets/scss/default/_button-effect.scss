@@ -1,0 +1,341 @@
+.cdx-btn-effect {
+  transition: var(--transition);
+  z-index: 0;
+  &::before {
+    width: 0%;
+    height: 100%;
+    background: #ff7675;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: var(--transition);
+  }
+  &:hover::before {
+    width: 100%;
+    transition: var(--transition);
+  }
+}
+
+.cdx-hover-slide {
+  &::before {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 0%;
+    height: 50%;
+    background-color: var(--white);
+    content: "";
+    transition: all ease 0.5s;
+    z-index: -1;
+  }
+  &::after {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 0%;
+    height: 50%;
+    background-color: var(--white);
+    content: "";
+    transition: all ease 0.5s;
+    z-index: -1;
+  }
+  &:hover {
+    color: var(--dark);
+    &::before {
+      width: 100%;
+    }
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.cdx-hover-slide-2 {
+  &::before {
+    background-color: #223370;
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    z-index: -1;
+    transition: all 0.6s ease;
+  }
+  &:hover {
+    &::before {
+      height: 380%;
+    }
+  }
+}
+
+// cdx-hover-alernate
+.cdx-hover-alernate {
+  transition: all ease 0.5s;
+  &::before {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 25%;
+    height: 0%;
+    background-color: var(--white);
+    content: "";
+    transition: all ease 0.5s;
+    z-index: -1;
+  }
+  &::after {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 25%;
+    height: 0%;
+    background-color: var(--white);
+    content: "";
+    transition: all ease 0.4s;
+    z-index: -1;
+  }
+  .cdx-btn-effect {
+    &::before {
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      width: 25%;
+      height: 0%;
+      background-color: var(--white);
+      content: "";
+      transition: all ease 0.3s;
+      z-index: -1;
+    }
+    &::after {
+      position: absolute;
+      bottom: 0%;
+      right: 50%;
+      width: 25%;
+      height: 0%;
+      background-color: var(--white);
+      content: "";
+      transition: all ease 0.2s;
+      z-index: -1;
+    }
+  }
+  &:hover {
+    color: var(--dark);
+    &::before {
+      height: 100%;
+    }
+    &::after {
+      height: 100%;
+    }
+    .cdx-btn-effect {
+      &::before {
+        height: 100%;
+      }
+      &::after {
+        height: 100%;
+      }
+    }
+  }
+}
+
+// cdx-hover-corners
+.cdx-hover-corners {
+  transition: all ease 1.5s;
+  &::before {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 0%;
+    height: 0%;
+    background-color: var(--white);
+    content: "";
+    transition: all ease 1.5s;
+    z-index: -1;
+  }
+  &::after {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 0%;
+    height: 0%;
+    background-color: var(--white);
+    content: "";
+    transition: all ease 1.5s;
+    z-index: -1;
+  }
+  .cdx-btn-effect {
+    &::before {
+      position: absolute;
+      bottom: 0%;
+      left: 0%;
+      width: 0%;
+      height: 0%;
+      background-color: var(--white);
+      content: "";
+      transition: all ease 1.5s;
+      z-index: -1;
+    }
+    &::after {
+      position: absolute;
+      bottom: 0%;
+      right: 0%;
+      width: 0%;
+      height: 0%;
+      background-color: var(--white);
+      content: "";
+      transition: all ease 1.5s;
+      z-index: -1;
+    }
+  }
+  &:hover {
+    color: var(--dark);
+    &::before {
+      height: 100%;
+      width: 100%;
+    }
+    &::after {
+      height: 100%;
+      width: 100%;
+    }
+    .cdx-btn-effect {
+      &::before {
+        height: 100%;
+        width: 100%;
+      }
+      &::after {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.cdx-inline-circle {
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  &:before {
+    background: var(--secondary);
+    transition: 0.6s ease-in;
+    transition-delay: 0.1s;
+  }
+
+  &:after {
+    background: var(--blue);
+    transition: 0.8s ease;
+    transition-delay: 0.4s;
+  }
+
+  &:hover {
+    &:before,
+    &:after {
+      transform: translate(-50%, -50%) scale(310);
+    }
+  }
+}
+
+.cdx-text-effect {
+  .cdx-button-text-move {
+    &::before {
+      content: attr(data-content);
+      position: absolute;
+      z-index: -1;
+    }
+  }
+  &:hover {
+    .cdx-button-text-move {
+      transform: translate(150%);
+      transition: var(--transition);
+      &::before {
+        content: attr(data-content);
+        position: absolute;
+        left: -150%;
+      }
+    }
+  }
+}
+.cdx-buble-effect {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    z-index: -1;
+    background-color: red;
+    transition: 0.4s ease;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 0;
+    bottom: 0;
+    left: 25%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    z-index: -1;
+    background-color: red;
+    transition: 0.5s ease;
+  }
+  .cdx-button-text-move {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 25%;
+      height: 0;
+      bottom: 0;
+      left: 50%;
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+      z-index: -1;
+      background-color: red;
+      transition: 0.8s ease;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 25%;
+      height: 0;
+      bottom: 0;
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+      z-index: -1;
+      background-color: red;
+      transition: 1.1s ease;
+    }
+  }
+  &:hover {
+    &::before {
+      height: 200%;
+    }
+    &::after {
+      height: 200%;
+    }
+    .cdx-button-text-move {
+      &::before {
+        height: 200%;
+      }
+      &::after {
+        height: 200%;
+      }
+    }
+  }
+}

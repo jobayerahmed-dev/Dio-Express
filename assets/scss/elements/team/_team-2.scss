@@ -1,0 +1,89 @@
+/*--------------------------------------------
+* TEAM CSS TWO
+--------------------------------------------*/
+
+.cdx-team-item-2 {
+    margin-bottom: 30px;
+    background-color: var(--white);
+    padding-top: 40px;
+    transition: var(--transition);
+    &:hover {
+        .cdx-thumb {
+            transform: scale(1.1);
+        }
+    }
+    .cdx-thumb {
+        transition: var(--transition);
+    }
+    .cdx-thumb-wrap {
+        position: relative;
+        height: 190px;
+        width: 190px;
+        margin: 0 auto;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 15px;
+    }
+    .cdx-name {
+        color: var(--dark); 
+        font-size: 20px; 
+        font-weight: 500;   
+        margin-bottom: 5px;
+        display: inline-block;
+        line-height: 1.2;
+        transition: var(--transition);
+        &:hover {
+            color: var(--primary);
+        }
+        @media #{$lg} {
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+         @media #{$md} {
+            font-size: 20px;
+         }
+    }
+    
+    .cdx-details {
+        padding: 0 25px; 
+        .cdx-designation {
+            font-weight: 500;
+            color: var(--gray);
+             @media #{$lg} {
+                font-size: 14px;
+             }
+        }
+    }
+    .cdx-social-item {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid var(--border-color);
+        margin-top: 30px;
+        padding-top: 20px;
+        padding-bottom: 22px;
+        li {
+            list-style: none;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--white-2);
+            margin: 3px;
+            transition: all 400ms ease;
+            transition-delay: 150ms;
+            a {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            &:hover {
+                background-color: var(--primary);
+            }
+        }
+    }
+}

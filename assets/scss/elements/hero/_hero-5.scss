@@ -1,0 +1,97 @@
+
+/*--------------------------------------------
+* HERO CSS FIVE
+--------------------------------------------*/
+
+.cdx-hero-area-5 {
+    position: relative;
+    margin-top: -100px;
+    background-color: #8fd5d9;  
+    padding: 170px 120px 260px;
+    background-repeat: no-repeat;
+    background-position: right;
+    @media #{$xxl} {
+        background-size: 40% 100%;
+    }
+    @media #{$lg} {
+      padding: 125px 0px 100px;  
+    } 
+    @media #{$md} {
+        background-image: none !important;
+    }
+    .cdx-image{
+        max-width: max-content;
+        position: relative;
+        top: 190px;
+        @media #{$md} {
+            display: none;
+        }
+        @media #{$lg} {
+            top: 40px;
+        }
+    }
+    .cdx-image-1{
+        position: absolute;
+        right: 42%;
+        top: 105px;
+        @media #{$md} {
+            display: none; 
+         }
+    }
+    .cdx-image-2{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        @media #{$lg} {
+           display: none; 
+        }
+    }
+}
+
+// cdx-form-style-3
+.cdx-form-style-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--white);
+    box-shadow: 0px 20px 30px 0px rgba(3, 6, 17, 0.14);
+    margin-top: 60px;
+    @media #{$sm} {
+        grid-template-columns: 1fr;
+    }
+    .cdx-input {
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+        display: block;
+        width: 100%;
+        color: var(--gray); 
+        font-size: 16px; 
+        font-weight: 500; 
+        padding: 23px 30px;
+        border-right: 1px solid #80858920;
+        &::placeholder {
+            color: var(--gray); 
+            font-size: 16px; 
+            font-weight: 500; 
+        }
+        &:focus {
+            outline: 0;
+            border: 0;
+            border-right: 1px solid #80858920;
+        }
+    }
+    .cdx-select {
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+        display: block;
+        width: 100%;
+        color: var(--gray); 
+        font-size: 16px; 
+        font-weight: 500; 
+        padding-left: 25px;
+        @media #{$sm} {
+           margin-bottom: 20px;
+        }
+    }
+}

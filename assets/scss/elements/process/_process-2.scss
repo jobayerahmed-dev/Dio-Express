@@ -1,0 +1,50 @@
+
+/*--------------------------------------------
+* PROCESS CSS TWO
+--------------------------------------------*/
+
+.cdx-process-item-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     @media #{$lg} {
+        flex-wrap: wrap;
+        gap: 20px;
+     }
+    .cdx-count-numbar {
+        height: 70px;
+        width: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #E4B90D;
+        border-radius: 50%;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: var(--font-roboto);
+        color: var(--dark);
+        margin-right: 12px;
+    }
+    .cdx-title {
+        margin-bottom: 2px;
+        color: var(--dark); 
+        font-size: 20px; 
+        font-weight: 500; 
+        @media #{$xl} {
+            font-size: 17px;
+        }
+    }
+    .cdx-description {
+        color: #03061160; 
+        font-size: 16px; 
+        font-weight: 500; 
+    }
+}
+
+
+.cdx-flexibility-inner-1 {
+    padding: 50px;
+    &.cdx-bg-overlay-base:after {
+        opacity: 0.75;
+    }
+}

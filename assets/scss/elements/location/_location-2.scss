@@ -1,0 +1,138 @@
+/*--------------------------------------------
+* LOCATION CSS TWO
+--------------------------------------------*/
+.cdx-location-area-2 {
+    overflow: hidden;
+    padding-bottom: 210px;
+    @media #{$lg} {
+        padding-bottom: 150px;
+    }
+    @media #{$sm} {
+        padding-bottom: 80px;
+    }
+}
+.cdx-location-wrap {
+    position: relative;
+    min-height: 580px;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+.cdx-location-style {
+    &.style-1 {
+        position: absolute;
+        top: 20%;
+        left: 0%;
+    }
+    &.style-2 {
+        position: absolute;
+        top: 2%;
+        left: 31%;
+    }
+    &.style-3 {
+        position: absolute;
+        top: 50%;
+        left: 42%;
+    }
+    &.style-4 {
+        position: absolute;
+        top: 30%;
+        left: 66%;
+    }   
+    &.style-5 {
+        position: absolute;
+        top: 8%;
+        left: 84%;
+        @media #{$sm} { 
+            left: 50%;
+        }
+    }
+    &.style-6 {
+       position: absolute;
+       bottom: -2%;
+       left: 25%;
+    }
+    &.style-7 {
+        position: absolute;
+        bottom: 15%;
+        left: 78%;
+        @media #{$sm} { 
+            left: 50%;
+        }
+    }
+}
+
+.cdx-location-style {
+    position: relative; 
+    transition: all 0.7s;
+    max-width: 320px;
+    &:hover {
+        .cdx-content {
+            opacity: 1;
+            visibility: visible;
+            top: -132px;
+        }
+    }
+    .cdx-icon-wrap {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        z-index: 99;
+    }
+    .cdx-content {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background-color: var(--white);
+        padding: 30px;
+        box-shadow: 0px 30px 40px 0px rgba(3, 6, 17, 0.12);
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: -125px;
+        left: -130px;
+        z-index: 9;
+        transition: all 0.7s;
+        width: 330px;
+        @media #{$sm} {  
+            align-items: flex-start; 
+            padding: 15px;  
+            top: -158px;
+            left: 0%; 
+            width: 160px;
+            flex-direction: column; 
+        }
+        &::after {
+            position: absolute;
+            bottom: -32px;
+            left: 130px;
+            width: 60px;
+            height: 47px;
+            background-color: var(--white);
+            clip-path: polygon(48% 29%, 0% 100%, 100% 100%);
+            content: "";
+            transform: rotate(180deg);
+            @media #{$sm} {
+                display: none;
+            }
+        }
+    }
+    .cdx-title {
+        color: var(--dark); 
+        font-size: 20px; 
+        display: inline-block;
+        line-height: 1;
+        font-weight: 500; 
+        @media #{$sm} {
+            display: block; 
+            font-size: 17px;
+        }
+    }
+    .cdx-country {
+        color: var(--gray); 
+        font-size: 18px; 
+        font-weight: 500; 
+        @media #{$sm} {
+         font-size: 13px;
+        }
+    }
+}

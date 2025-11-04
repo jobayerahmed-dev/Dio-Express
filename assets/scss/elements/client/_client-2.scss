@@ -1,0 +1,56 @@
+/*--------------------------------------------
+* CLIENT CSS ONE
+--------------------------------------------*/
+.cdx-client-slider-wrap.cdx-style-2 {
+    position: relative; 
+    .cdx-navigation-style-8 {
+        width: 100%;
+        position: absolute;
+        top: 37%;
+        .cdx-btn-navigation { 
+            &:nth-child(1) {
+                left: -25px;
+                @media #{$sm} {
+                    left: -0px;
+                }
+            } 
+        }
+    }
+    .cdx-client-prev {
+        transform: translate(-0px, 0px);
+        padding-left: 4px;
+    }
+    .cdx-client-next {
+        transform: translate(25px, 0px);
+        @media #{$sm} {
+                transform: translate(0px, 0px);
+            }
+        } 
+    .cdx-client-logo {
+        border: 1px solid #ffffff10;
+        border-right: 0px solid #ffffff10;  
+    }
+}
+
+// navigation-style-8
+.cdx-navigation-style-8 {
+    .cdx-btn-navigation {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background-color: var(--green-3);
+        transition: var(--transition);
+        &:hover {
+            background-color: var(--primary);
+            .cdx-icon {
+                filter: brightness(0);
+            }
+        }
+        .cdx-icon {
+            transition: var(--transition);
+        }
+    }
+    
+}

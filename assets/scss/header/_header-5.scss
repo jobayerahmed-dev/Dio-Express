@@ -1,0 +1,29 @@
+/*--------------------------------------------
+* HEADER CSS FIVE
+--------------------------------------------*/
+.cdx-navbar-area-5 {
+    position: relative;
+   background-color:transparent;
+   border-bottom: 1px solid rgba(23, 22, 28, 0.14);
+   z-index: 3;
+   .cdx-search-form-1{
+    background-color: var(--white);
+    padding: 12px 25px;
+   }
+   .search-input{
+    border: none;
+    &:focus{
+        border: none;
+    }
+   }
+   .cdx-menu-icon{
+    padding: 12px 25px;
+    filter: none !important;
+    background-color: var(--dark);
+   }
+   .cdx-style-4{
+    padding-left:20PX ;
+}
+}
+
+

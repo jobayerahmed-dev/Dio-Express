@@ -1,0 +1,68 @@
+/*--------------------------------------------
+* VIDEO CSS THREE
+--------------------------------------------*/
+.cdx-video-area-3 {
+    overflow: hidden;
+    margin-left: -15px;
+    @media #{$xxxl} {
+        margin-right: 24%;
+    }
+    @media #{$xxl} {
+        padding-right: 0px;
+        margin-right: 0px;
+    }
+    @media #{$md} {
+        margin-left: 0px;
+    }
+    .cdx-thumb {
+        border-radius: 0px 20px 20px 0px;
+        @media #{$md} {
+            border-radius: 20px;
+        }
+    }
+}
+.cdx-video-box-3 {  
+    border-radius: 20px;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 212px;
+    @media #{$xxl} {
+        padding-top: 152px;
+    }
+    @media #{$lg} {
+       padding-top: 70px;
+    }
+    &::before {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgb(3 6 17 / 65%) 0%, #14AD11 100%);
+        content: ""; 
+    }
+    .cdx-title {
+        color: var(--white); 
+        font-family: var(--font-montserrat);
+        font-size: 50px; 
+        font-weight: 700; 
+        padding: 85px 0px 50px;  
+        @media #{$lg} {
+            font-size: 40px;
+            padding: 45px 0px 0px;  
+        }
+    }
+    .cdx-title-2 {  
+        -webkit-text-stroke: 1px #ffffff50;
+        -webkit-text-fill-color: transparent; 
+        font-size: 120px; 
+        font-weight: 800; 
+        line-height: 1;
+        margin-bottom: -32px; 
+        @media #{$xl} {
+            font-size: 90px;
+            margin-bottom: -28px;
+        }
+        
+    }
+}

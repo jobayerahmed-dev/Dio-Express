@@ -1,0 +1,42 @@
+/*--------------------------------------------
+* BLOG GRID CSS
+--------------------------------------------*/
+
+.cdx-blog-grid-style {
+    .cdx-title {
+        font-size: 30px;
+        @media #{$xl} {
+            font-size: 25px;
+        }
+    }
+    .cdx-details {
+        padding: 40px 15px 35px;
+        @media #{$xl} {
+            padding: 40px 15px 35px;
+        }
+    }
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .cdx-pagination-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background-color: #F2EFE8;
+        color: #1E1E2F; 
+        font-size: 16px; 
+        font-weight: 500; 
+        transition: var(--transition);
+        &:hover {
+            background-color: #F7C600;
+        } 
+    }
+    .active {
+        background-color: #F7C600;  
+    }
+}

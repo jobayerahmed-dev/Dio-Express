@@ -1,0 +1,72 @@
+/*--------------------------------------------
+* SHIPPING CSS
+--------------------------------------------*/
+.cdx-shipping-area {
+    background-color: #E1E9F1;
+    position: relative;
+    padding-top: 340px;
+    overflow: hidden;
+    margin-top: -210px;
+    @media #{$sm} {
+        padding-top: 60px;
+        margin-top: 0px;
+    }
+    &::after {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        width: 1272px;
+        height: 1272px;
+        border-radius: 1272px;
+        opacity: 0.3;
+        background-color: #1CE2EF;
+        filter: blur(300px);
+        content: "";
+        @media #{$lg} {
+            display: none;
+        }
+    }
+}
+
+.cdx-shipping-form {
+    .cdx-label {
+        color: var(--dark); 
+        font-family: var(--font-montserrat);
+        font-size: 18px; 
+        font-weight: 600; 
+        padding-bottom: 10px;
+    }
+    .cdx-form-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        border-radius: 10px;
+        border: 1px solid #03061114; 
+        padding: 20px;
+        @media #{$sm} {
+            flex-wrap: wrap;
+        }
+    }
+    .cdx-single-block {
+        width: 100%;
+        height: 100%;
+    }
+    .cdx-select {
+        color: #03061150; 
+        font-size: 15px; 
+        font-weight: 400; 
+        border-radius: 6px;
+        background-color: var(--white);
+        -webkit-appearance: none;
+        background-image: url(../images/home-3/icon/arrow-down.svg);
+        background-repeat: no-repeat; 
+        background-position: 93% 50%;
+        width: 100%;
+        display: block;
+        border: 0;
+        outline: 0;
+        padding: 15px 20px;
+        box-shadow: 6px 6px 4px 0px rgba(18, 16, 16, 0.10);
+    }
+}

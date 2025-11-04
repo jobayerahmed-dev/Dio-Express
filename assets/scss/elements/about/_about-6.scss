@@ -1,0 +1,54 @@
+/*--------------------------------------------
+* ABOUT CSS SIX
+--------------------------------------------*/
+.cdx-about-area-6 {
+    padding-bottom: 200px;
+    .cdx-section-title{
+        font-size: 48px;
+    }
+}
+
+.cdx-about-item-wrap {
+    display: flex;
+    position: relative;
+    .cdx-item {
+        .cdx-title {
+            display: inline-block;
+            padding: 2px 8px;
+            margin-bottom: 20px;
+            margin-top: 55px;
+            background: rgba(217, 217, 217, 0.10);
+            color: var(--white);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26px;
+           
+        }
+
+        .cdx-details {
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid rgba(255, 255, 255, 0.30);
+            padding-top: 20px;
+        }
+
+        .cdx-year {
+            color: var(--white);
+            font-size: 56px;
+            font-weight: 700;
+        }
+
+        .cdx-icon {
+            padding: 0 30px;
+        }
+
+        .cdx-description {
+            color: var(--gray);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26px;
+
+        }
+    }
+}

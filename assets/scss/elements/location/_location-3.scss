@@ -1,0 +1,116 @@
+/*--------------------------------------------
+* LOCATION CSS THREE
+--------------------------------------------*/
+.cdx-tab-style-3 {
+    display: grid;
+    grid-template-columns: auto 548px;
+    border-radius: 20px;
+    border: 2px solid var(--dark);  
+    @media #{$lg} {
+        grid-template-columns: 1fr;
+    }
+    .cdx-tab-content {
+        position: relative;
+        border-right: 2px solid var(--dark); 
+        border-radius: 20px 0px 0px 20px;
+        padding: 60px 50px 90px;
+        @media #{$lg} {
+            border-radius: 20px 20px 0px 0px;
+            border-right: 0px solid var(--dark); 
+        }
+    }
+    .cdx-tab-title-wrap {
+        padding: 20px 30px 30px;
+        @media #{$sm} {
+            padding: 20px 10px 20px;
+        }
+    }
+    .cdx-tab-top {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 35px;
+        background-color: var(--blue-2); 
+        border-radius: 0px 20px 0px 0px;
+        @media #{$lg} {
+            border-radius: 0px;
+        }
+        @media #{$sm} {
+            padding: 20px 15px; 
+        }
+        .cdx-section-title-md {
+            @media #{$sm} { 
+                font-size: 18px;
+            }
+        }
+    }
+    .cdx-tab-btn-2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 10px;
+        border: 1px solid rgba(3, 6, 17, 0.14);
+        background-color: var(--white);
+        padding: 30px;
+        margin-bottom: 20px;
+        @media #{$sm} {
+            padding: 15px;
+        }
+        &:last-child {
+            margin-bottom: 0px;
+        }
+        .cdx-icon-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 46px;
+            height: 46px;
+            border-radius: 10px;
+            border: 1px solid rgba(3, 6, 17, 0.14);
+            background-color: transparent;
+            transition: var(--transition);
+            &:hover {
+                background-color: var(--green);
+                .cdx-icon {
+                    filter: invert(1);
+                }
+            }
+            .cdx-icon {
+                transition: var(--transition);
+            }
+        }
+        &.active {
+            .cdx-icon-wrap { 
+                background-color: var(--green);
+                .cdx-icon {
+                    filter: invert(1);
+                }
+            } 
+        }
+        .details {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .cdx-title {
+            color: var(--dark); 
+            font-size: 20px; 
+            display: inline-block;
+            line-height: 1;
+            font-weight: 500; 
+            @media #{$sm} {
+                display: block; 
+                font-size: 15px;
+                margin-bottom: 0;
+            }
+        }
+        .cdx-country {
+            color: var(--gray); 
+            font-size: 18px; 
+            font-weight: 500; 
+            @media #{$sm} {
+            font-size: 13px;
+            }
+        }
+    }
+}

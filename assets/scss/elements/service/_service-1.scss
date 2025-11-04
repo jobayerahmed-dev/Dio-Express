@@ -1,0 +1,87 @@
+/*--------------------------------------------
+* SERVICE CSS ONE
+--------------------------------------------*/
+
+.cdx-service-area {
+    background-size: contain;
+}
+
+.cdx-single-service-card {
+    background-color: var(--white);
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 25px;
+    box-shadow: 10px 10px 0px 0px rgba(3, 6, 17, 0.06), 6px 14px 24px 0px rgba(18, 16, 16, 0.10);
+    @media #{$lg}{
+        padding: 30px;
+    }
+    .cdx-icon {
+        height: 70px;
+        width: 70px;
+        background-color: var(--primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-bottom: 25px;
+    }
+    .cdx-title {
+        margin-bottom: 10px;
+    }
+    .cdx-description {
+        margin-bottom: 0;
+    }
+    .cdx-hover-wrap {
+        position: absolute;
+        left: 0;
+        top: 30px;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+        background-color: var(--primary);
+        padding: 50px;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s;
+        .cdx-title-2:hover a {
+            color: var(--secondary);
+        }
+        .cdx-description-2 {
+            color: var(--dark-3);
+            margin-bottom: 50px;
+        }
+        .cdx-read-more-btn-small {
+            padding: 14px 20px;
+            background-color: var(--white);
+            font-weight: 500;
+            &:hover {
+                background-color: var(--secondary);
+                color: var(--dark);
+            }
+        }
+        .cdx-right-shape {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 120px;
+            transition: 0.4s;
+        }
+    }
+    &:hover {
+        .cdx-hover-wrap {
+            visibility: visible;
+            opacity: 1;
+            top: 0;
+            .cdx-right-shape {
+                width: 220px;
+            }
+        }
+    }
+}
+
+.cdx-service-area {
+    .cdx-right-to-left-move {
+        bottom: 0;
+    } 
+}

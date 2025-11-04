@@ -1,0 +1,73 @@
+
+/*--------------------------------------------
+* FOOTER CSS SIX
+--------------------------------------------*/
+
+.cdx-footer-area-6 {
+  
+    .cdx-footer-widget{
+        padding-top: 80px;
+        padding-bottom: 105px;
+        height: 100%;
+        border-right: 1px solid  rgba(255, 255, 255, 0.10);  
+        @media #{$md} {
+            border: none;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        .cdx-widget-title{
+            color: rgba(255, 255, 255, 0.40); 
+            font-size: 15px; 
+            font-weight: 500;
+            line-height: 26px; 
+        }
+        .cdx-menu-link{
+            color: var(--white);
+        }
+    }
+    .cdx-footer-bottom {
+        background-color: transparent;
+        text-align: center;
+        border-top: 1px solid  rgba(255, 255, 255, 0.10);
+    }
+}
+
+.cdx-newsletter-form-4 { 
+    display: flex;
+    align-items: center; 
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    border-right: 1px solid rgba(255, 255, 255, 0.10);
+    .cdx-input {
+        display: block;
+        width: 100%;
+        color: var(--white);
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+        padding: 15px 0px;
+        font-weight: 400;
+        &::placeholder {
+            color:rgba(255, 255, 255, 0.50);
+            font-size: 20px;
+            font-weight: 400; 
+        }
+        &:focus {
+            border: 0;
+            outline: 0;
+        }
+        
+    }
+    .cdx-btn-submit {
+        display: inline-block;
+        padding: 25px 130px;
+        background-color: var(--green-2);
+        transition: var(--transition);
+        &:hover {
+            background-color: var(--green);
+        }
+        @media #{$md} {
+            padding: 20px 40px;
+        }
+    }
+}

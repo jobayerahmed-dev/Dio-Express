@@ -1,0 +1,69 @@
+
+/*--------------------------------------------
+* FOOTER CSS TWO
+--------------------------------------------*/
+
+.cdx-footer-area-2 {
+    position: relative;
+    .cdx-footer-bottom {
+        background-color: transparent;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+}
+
+.cdx-footer-widget.cdx-style-2  {
+    .cdx-menu-link {
+      color: var(--gray);
+      &:hover {
+        color: var(--primary);
+      }
+    }
+    .cdx-widget-title {
+        padding-bottom: 20px;
+        @media #{sm} {
+            padding-bottom: 10px;
+        }
+    }
+    .cdx-address-info { 
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        .cdx-menu-item { 
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--gray); 
+            font-size: 15px; 
+            font-weight: 500;  
+        }
+    }
+}
+
+// newsletter form 
+.cdx-newsletter-form {
+    background-color: var(--white);
+    display: flex;
+    padding-left: 20px;
+    .cdx-input {
+        border: 0;
+        background-color: transparent;
+        outline: 0;
+        display: block;
+        width: 100%;
+        color: var(--gray); 
+        font-size: 15px; 
+        font-weight: 500;  
+        &::placeholder {
+           color: var(--gray);  
+            font-size: 15px; 
+            font-weight: 500; 
+        }
+        &:focus {
+            outline: 0;
+            border: 0;
+        }
+    }
+    .cdx-btn-primary {
+        padding: 12px 37px;
+    }
+}

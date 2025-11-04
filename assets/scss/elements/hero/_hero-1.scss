@@ -1,0 +1,127 @@
+
+/*--------------------------------------------
+* HERO CSS ONE
+--------------------------------------------*/
+.cdx-hero-area {
+    padding-top: 120px;
+    margin-top: -155px;
+    overflow: hidden;
+    @media #{$lg}{
+        padding-top: 250px;
+    }
+    @media #{$md}{
+        padding-top: 220px;
+    }
+    .cdx-left-to-right-move {
+        margin-top: -100px;
+        z-index: 0;
+        width: 100px; 
+        @media #{$sm}{
+            display: none;
+        }
+    } 
+    .cdx-fly-plane-right-top {
+        position: absolute;
+        right: 194px;
+        bottom: 246px;
+        height: 572px;
+        width: 100px;
+        transform: rotate(45deg);
+        @media #{$xxxl}{
+            right: 313px;
+            bottom: 486px;
+            height: 800px;
+        }
+        @media #{$sm}{
+            display: none;
+        }
+    }
+}
+.cdx-hero-inner-1 {
+    padding: 130px 0;
+    position: relative;
+    z-index: 2; 
+    @media #{$lg}{
+       padding: 30px 0 130px;
+    }
+    @media #{$md}{
+        text-align: center;
+        padding: 30px 0 100px;
+    }
+    @media #{$sm}{
+        padding: 0px 0px 60px;
+    }
+    .cdx-title {
+        font-size: 90px;
+        font-weight: 800;
+        @media #{$xl}{
+            font-size: 76px;
+        }
+        @media #{$lg}{
+            font-size: 55px;
+        }
+        @media #{$xs}{
+            font-size: 40px;
+        }
+    }
+    .cdx-description {
+        font-weight: 500;
+        @media #{$xs}{
+            padding: 0 15px;
+        }
+    }
+}
+
+//video style
+.cdx-banner-video-slider {
+    position: relative;
+    .swiper-slide{
+        transition: all 0.7s;
+    }
+    .cdx-thumb {
+        img {
+            transition: 3s all;
+            min-height: 200px;
+        }
+    }
+    .cdx-banner-slider-navigation {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        .cdx-slider-nav-btn {
+            margin-bottom: 4px;
+        }
+    }
+}
+
+.cdx-banner-video-inner {
+    position: relative;
+    .cdx-banner-slider-video {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 70px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        background-color: var(--sky-1);
+        @media #{$md}{
+            padding: 30px 30px;
+        }
+        span {
+            font-size: 15px;
+            font-weight: 600;
+            max-width: 105px;
+        }
+    }
+}
+
+.cdx-banner-video-area {
+    @media all and (min-width: 1500px) {
+        .container {
+            max-width: 1700px;
+        }
+    }
+}

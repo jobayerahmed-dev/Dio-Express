@@ -1,0 +1,150 @@
+/*--------------------------------------------
+* PROCESS CSS TEN
+--------------------------------------------*/
+.cdx-portfolio-area-10 {
+    
+    .cdx-portfolio-btn  { 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px; 
+        height: 30px;
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            background-color: #030611;
+            transition: var(--transition);
+        }
+        .swiper-pagination-bullet-active {
+            width: 26px;
+            height: 26px;
+            background-color: #F7C600;
+            position: relative;
+            &::before {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 4px;
+                height: 4px;
+                background-color: #030611;
+                border-radius: 100px;
+                content: ""; 
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+
+.cdx-portfolio-slide-10 {
+    display: grid;
+    grid-template-columns: 330px auto;
+    align-items: center;
+    background-color: #D2CCB4; 
+    transition: var(--transition);
+    @media #{$xxl} {
+        grid-template-columns: 200px auto;
+    }
+    @media #{$lg} {
+        grid-template-columns: 300px auto;
+    }
+    @media #{$md} {
+        grid-template-columns: 225px auto;
+    }
+    @media #{$sm} {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .cdx-thumb {
+        transition: var(--transition);
+        @media #{$xxl} {
+            width: 60%;
+        }
+        @media #{$sm} {
+            width: 50%;
+        }
+    }
+    &:hover {
+        .cdx-thumb {
+            transform: scale(1.1);
+        }
+    }
+    .cdx-details {
+        background-color: #DBD9D1;;
+        padding: 70px 0px 50px;
+        border: 1px solid var(--dark);
+        @media #{$xxl} {
+            padding: 40px 0px 40px;
+        }
+    }
+    .cdx-thumb-wrap { 
+        padding-left: 54px;
+        @media #{$sm} {
+            padding-left: 25px;
+            padding-top: 25px;
+        }
+    }
+    .cdx-title {
+        color: var(--dark); 
+        font-size: 30px; 
+        font-weight: 500; 
+        line-height: 1.2;
+        padding-left: 40px;
+        display: inline-block;
+        transition: var(--transition);
+        @media #{$xxl} {
+            font-size: 25px;
+        }
+        @media #{$xl} {
+            padding-left: 25px;
+        }
+        @media #{$lg} {
+            padding-right: 40px;
+        }
+        &:hover {
+            color: #F7C600;
+        }
+    }
+    .cdx-content {
+        color: var(--gray);
+        font-size: 16px;
+        font-weight: 500;
+        border-bottom: 1px solid #03061114;
+        padding: 7px 60px 50px 40px;
+        margin-bottom: 40px;
+        @media #{$xl} {
+           padding: 7px 60px 50px 25px;
+        }
+        @media #{$lg} {
+           padding: 7px 100px 50px 25px;
+        }
+        @media #{$xxs} {
+            padding: 7px 100px 40px 25px;
+        }
+    }
+    .cdx-btn-portfolio {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: #D2CCB4;
+        padding: 14px 32px;
+        color: var(--dark);  
+        font-size: 15px; 
+        font-weight: 500; 
+        margin-left: 40px;
+        transition: var(--transition);
+        &:hover {
+            background-color: #F7C600;
+        }
+        @media #{$xl} {
+            margin-left: 25px;
+        }
+    }
+}
+
+// Only used for 1280 screen 
+@media only screen and (min-width: 1280px) and (max-width: 1300px) {
+    .cdx-portfolio-slide-10 .cdx-btn-portfolio { 
+        padding: 14px 20px; 
+    }
+}

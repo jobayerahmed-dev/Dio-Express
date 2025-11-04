@@ -1,0 +1,24 @@
+/*--------------------------------------------
+* FAQ CSS NINE
+--------------------------------------------*/
+
+.cdx-faq-area-9 {
+    .cdx-faq-right {
+        padding-left: 15px;
+        @media #{$lg} {
+            padding-left: 0px;    
+        }
+    }
+    .accordion-button:after {
+        content: "+";
+        right: 0;
+    }
+    .accordion-item .accordion-header .accordion-button {
+        padding-left: 0px;
+    }
+    .cdx-accordion-style-1 {
+        @media #{$sm} {
+            max-width: 97%;
+        }
+    }
+}

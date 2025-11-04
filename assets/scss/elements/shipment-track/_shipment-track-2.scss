@@ -1,0 +1,49 @@
+/*--------------------------------------------
+* SHIPPING TRACK CSS TWO
+--------------------------------------------*/
+.cdx-shipment-item {
+    position: relative;
+    background-color: var(--sky-5);
+    box-shadow: 6px 14px 24px 0px rgba(18, 16, 16, 0.1);
+    .cdx-details-info {
+        text-align: center;
+        padding: 0 60px 0;
+    }
+    .cdx-title {
+        color: var(--dark);
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 1.2;
+        display: inline-block;
+        transition: var(--transition);
+        padding: 30px 0 5px 0;
+    }
+    .cdx-subtext {
+        color: var(--gray);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+    .cdx-btn-arrow-right {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 28px 0 40px 0;
+        color: var(--dark);
+        font-size: 15px;
+        font-weight: 500;
+        transition: var(--transition);
+        &:hover{
+            color: var(--primary);
+            .cdx-arrow-btn {
+                background-color: var(--primary);
+            }
+        }
+    }
+    .cdx-arrow-btn {
+        background-color: #C5D8D6;
+        padding: 12px 15px;
+        border-radius: 50%;
+        transition: var(--transition);
+    }
+}

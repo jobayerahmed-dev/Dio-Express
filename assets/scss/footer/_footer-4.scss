@@ -1,0 +1,54 @@
+/*--------------------------------------------
+* FOOTER CSS FOUR
+--------------------------------------------*/
+
+.cdx-footer-area-4 {
+    position: relative;
+    background-color: var(--dark);
+    .cdx-footer-widget-top {
+        position: relative;
+        margin-top: 120px;
+        top: -100px;
+        .cdx-footer-top-wrap {
+            background-color: #0b2f67;
+            opacity: 100%;
+            padding: 50px 0px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        .cdx-widget-title {
+            font-size: 40px;
+        }
+        .cdx-content {
+            color: var(--white);
+            opacity: 0.7;
+        }
+    }
+    .cdx-social-media{
+        justify-content: end;
+        @media #{$sm} {
+            justify-content: center;
+        }
+        .cdx-social-link{
+            border-radius: 50%;
+        }
+    }
+    .cdx-footer-bottom{
+        background-color: transparent;
+        border-top: 1px solid rgba(255, 255, 255, 0.10);
+    }
+}
+
+.cdx-newsletter-form-6 {
+    .cdx-input {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 14px;
+        color: var(--white);
+        border: 1.5px solid rgba(255, 255, 255, 0.10);
+        background: rgba(255, 255, 255, 0.00);
+    }
+    .cdx-btn-primary {
+        width: 100%;
+    }
+}

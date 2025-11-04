@@ -1,0 +1,115 @@
+/*--------------------------------------------
+* TESTIMONIAL CSS FIVE
+--------------------------------------------*/
+.cdx-testimonial-area-5 { 
+   position: relative;
+   &::before {
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    width: 43%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.20);
+    content: "";
+    @media #{$xxxl} {
+        width: 45%;
+    }
+    @media #{$sm} {
+        display: none;
+    }
+   }
+   &::after {
+    position: absolute;
+    top: 20%;
+    right: 0%;
+    width: 43%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.20);
+    content: "";
+    @media #{$xxxl} {
+        width: 45%;
+    }
+    @media #{$sm} {
+        display: none;
+    }
+   }
+}
+
+.cdx-testimonial-slider-5 {
+    .cdx-navigation-wrap-9 {
+        .cdx-btn-navigation {
+           background-color: var(--dark-7); 
+           &:hover {
+            background-color: var(--green-2);
+            padding-right: 10px;
+            padding-left: 10px;
+           }
+        } 
+        .cdx-btn-navigation:nth-child(1) {
+            border-right: 1px solid rgba(255, 255, 255, 0.20); 
+            @media #{$sm} {
+                border-right: 0px;
+            }
+        }
+        .cdx-btn-navigation:nth-child(2) {
+            border-left: 1px solid rgba(255, 255, 255, 0.20); 
+            @media #{$sm} {
+                border-left: 0px;
+            }
+        }
+    }
+}
+
+.cdx-testimonial-slide-5 {
+    text-align: center;
+    .cdx-client-wrap {
+        width: 206px;
+        height: 206px;
+        border-radius: 100px;
+        overflow: hidden; 
+        margin: 0 auto;
+    }
+    .cdx-client-img {
+        width: auto; 
+        height: 100%;
+    }
+   .cdx-content {
+        color: #ffffff70; 
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 1.4;
+        padding: 50px 170px 30px;
+        @media #{$lg} {
+           font-size: 27px; 
+           padding: 50px 150px 30px;
+        }
+        @media #{$md} {
+            padding: 50px 100px 30px;
+        }
+        @media #{$sm} {
+            font-size: 20px;
+            padding: 50px 70px 30px; 
+        }
+        @media #{$xxs} {
+            font-size: 18px;
+            padding: 30px 45px 20px;
+        }
+   }
+   .cdx-name {
+    color: var(--blue); 
+    font-size: 20px; 
+    font-weight: 500; 
+    line-height: 1;
+    @media #{$sm} {
+        font-size: 16px;
+    }
+   }
+   .cdx-designation {
+        color: #808589;
+        font-size: 18px;
+        font-weight: 500;
+         @media #{$sm} {
+            font-size: 14px;
+         }
+   }
+}

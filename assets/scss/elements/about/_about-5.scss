@@ -1,0 +1,111 @@
+/*--------------------------------------------
+* ABOUT CSS FIVE
+--------------------------------------------*/
+.cdx-about-area-5 {
+    position: relative;
+    padding-bottom: 300px;
+    @media #{$lg} {
+        padding-bottom: 250px;
+    }
+    @media #{$md} {
+        padding-bottom: 115px;
+    }
+    @media #{$sm} {
+        padding-bottom: 90px;
+    }
+    .cdx-thumb-wrap {
+        position: relative;
+    }
+    .cdx-img-1 {
+        position: absolute;
+        top: 0%;
+        right: 80px;
+        @media #{$xl} {
+            right: 20px;
+        }
+        @media #{$md} {
+            right: 0;
+            width: 50%;
+            top: 10%;  
+        }
+        @media #{$sm} {
+            display: none;
+        }
+    } 
+    .cdx-img-2 { 
+        transform: translate(0%, 200px);
+        @media #{$md} {
+            transform: translate(0%, 0px);
+        }
+    }
+    .cdx-img-3 {
+        position: absolute;
+        top: 70px;
+        left: 40px;
+        z-index: -1;
+        @media #{$xl} {
+            left: 25px;
+        }
+        @media #{$lg} {
+            display: none;
+        }
+    }
+    .cdx-section-content {
+        padding-bottom: 35px;
+    }
+   .cdx-details-right {
+        transform: translate(0px, 80px);
+        @media #{$lg} {
+            transform: translate(0px, 0px);
+        }
+    }
+}
+
+// cdx-icon-box-1
+.cdx-icon-box-1 {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background-color: var(--gray-8);
+    padding: 25px 35px;
+    .cdx-title {
+        color: var(--dark);  
+        font-size: 18px; 
+        font-weight: 500; 
+        line-height: 1;
+    }
+    .cdx-text {
+        color: var(--gray); 
+        font-size: 16px; 
+        font-weight: 500; 
+    }
+}
+
+// cdx-img-box-1
+.cdx-img-box-1 {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    .cdx-thumb-wrap {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .cdx-thumb {
+        width: auto;
+        height: 100%;
+    }
+    .cdx-name {
+        color: var(--dark);  
+        font-size: 20px; 
+        font-weight: 500; 
+        line-height: 0;
+        display: inline-block;
+    }
+    .cdx-designation {
+        color: var(--gray); 
+        font-size: 18px; 
+        font-weight: 500; 
+    }
+}

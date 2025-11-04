@@ -1,0 +1,57 @@
+/*--------------------------------------------
+* FOOTER CSS SEVEN
+--------------------------------------------*/
+
+.cdx-footer-area-7 {
+    position: relative;
+    background-color: var(--green-4); 
+    .cdx-footer-bottom {
+        background-color: transparent;
+    } 
+    .cdx-deliver-man {
+        position: absolute;
+        top: -29%;
+        right: 3%;
+
+        @media #{$lg} {
+            display: none;
+        }
+    } 
+    .cdx-shape-1 {
+        position: absolute;
+        top: 0px;
+        left: 0px; 
+        @media #{$xxl} {
+            width: 20%;
+        } 
+        @media #{$lg} {
+            display: none;
+        }
+    } 
+    .cdx-shape-2 {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+
+        @media #{$xxl} {
+            width: 10%;
+        }
+
+        @media #{$lg} {
+            display: none;
+        }
+    }
+    .cdx-footer-features {
+        background: none;
+        background-color: var(--dark);
+    } 
+    .cdx-footer-widget {
+        .cdx-widget-title {
+            color: rgba(255, 255, 255, 0.30);
+        }
+        .cdx-menu-link {
+            color: var(--white);
+            opacity: 0.6;
+        }
+    }
+}

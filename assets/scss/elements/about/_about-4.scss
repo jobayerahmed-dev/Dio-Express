@@ -1,0 +1,21 @@
+/*--------------------------------------------
+* ABOUT CSS FOUR
+--------------------------------------------*/
+.cdx-about-area-4 {
+    .cdx-shape-btm {
+        position: absolute;
+        top: 21%;
+        left: 9%;
+        @media #{$xxxl} {
+            left: 19%;
+        }
+        @media #{$xxl} {
+            top: 30%;
+            left: 1%;
+        }
+        @media #{$xl} {
+            display: none;
+        }
+    }
+   
+}

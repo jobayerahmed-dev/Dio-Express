@@ -1,0 +1,80 @@
+/*--------------------------------------------
+* TEAM CSS TEN
+--------------------------------------------*/
+
+.cdx-team-area-10 {
+    padding-left: 90px;
+    @media #{$xxl} {
+        padding-left: 15px;
+    }
+    @media #{$md} {
+        padding-right: 15px;
+    }
+}
+.cdx-team-item-10 {
+    display: grid;
+    grid-template-columns: 160px auto;
+    background-color: #D2CCB4;
+    transition: var(--transition);
+    @media #{$xxl} {
+        grid-template-columns: 130px auto;
+    }
+    .cdx-thumb {
+        transition: var(--transition);
+    }
+    &:hover {
+        background-color: #DBD9D1;
+        .cdx-thumb {
+            transform: scale(1.1);
+        }
+    }
+    .cdx-thumb-wrap {  
+        overflow: hidden; 
+    }
+    .cdx-details {
+        width: 100%;
+        border: 1px solid #030611;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: 44px;
+        @media #{$xxl} {
+            padding-left: 20px;
+        }
+    } 
+    .cdx-name {
+        color: #030611;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1;
+        display: inline-block;
+        padding: 25px 0px 5px;
+        @media #{$xxs} {
+            font-size: 17px;
+        }
+    }
+    .cdx-designation {
+        color: #808589;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: normal;
+        padding-bottom: 15px;
+        @media #{$xxs} {
+            font-size: 14px;
+        }
+    }
+}
+
+// Only used for 1280 screen 
+@media only screen and (min-width: 1280px) and (max-width: 1300px) {
+    .cdx-team-item-10 {
+        .cdx-name { 
+            font-size: 18px; 
+        }
+        .cdx-designation { 
+            font-size: 15px; 
+        }
+    }
+     
+}

@@ -1,0 +1,53 @@
+
+/*--------------------------------------------
+* FOOTER CSS NINE
+--------------------------------------------*/
+
+.cdx-footer-area-9 {
+   background-color: var(--green);
+   .cdx-left-to-right-move { 
+      bottom: 51px;
+      @media #{$md} {
+         display: none;
+      }
+   }
+   .cdx-footer-bottom {
+    background-color: #1c5454;
+   }
+   .cdx-widget-nav-menu {
+      ul {
+         li { 
+            color: #ffffff60; 
+         }
+      } 
+   }
+   .cdx-details {
+      p {
+         color: #ffffff60;  
+      }
+   }
+   .cdx-left-to-right-move { 
+      width: 5%;
+      @media #{$md} {
+         width: 8%;
+      }
+      @media #{$sm} {
+         width: 14%;
+      }
+   }
+   .cdx-copyright {
+      color: #ffffff60;  
+      font-size: 14px;
+   }
+   .cdx-footer-nav-menu a {
+      color: #ffffff60;  
+      border-right: 1px solid #ffffff60; 
+      font-size: 14px;
+      &:hover {
+         color: var(--primary);
+      }
+      &:last-child {
+         border-right: 0px solid #ffffff60; 
+      }
+   }
+}

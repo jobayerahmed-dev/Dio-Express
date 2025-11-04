@@ -1,0 +1,38 @@
+.cdx-counter-area-1  {
+    .cdx-counter-area{
+        background: var(--sky-5);
+    }
+    .cdx-border-right {
+        border-right: 1px solid rgba(4, 6, 24, 0.14);
+        @media #{$md} {
+            border-right :none;
+        }
+        @media #{$sm} {
+            border-right :none;
+            border-bottom :1px solid rgba(4, 6, 24, 0.14);
+
+        }
+    }
+}
+.cdx-counter-item {
+    text-align: center;
+    padding: 68px 80px;
+    .cdx-number {
+        color: var(--dark);
+        text-align: center;
+        font-family: var(--font-roboto);
+        font-size: 56px;
+        font-weight: 700;
+    }
+
+    .cdx-title {
+        color: var(--gray);
+        text-align: center;
+        font-family: var(--font-roboto);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+    }
+
+   
+}

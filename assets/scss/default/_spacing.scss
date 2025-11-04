@@ -1,0 +1,249 @@
+//== padding classes top
+.cdx-pt-40 {
+    padding-top: 40px;
+     @media #{$sm} {
+        padding-top: 20px;
+    }
+}
+.cdx-pt-60 {
+    padding-top: 60px;
+    @media #{$md} {
+        padding-top: 40px;
+    }
+}
+.cdx-pt-70 {
+    padding-top: 70px;
+     @media #{$md} {
+        padding-top: 40px;
+    }
+}
+.cdx-pt-80 {
+    padding-top: 80px;
+}
+.cdx-pt-90 {
+    padding-top: 90px;
+    @media #{$md}{
+        padding-top: 50px;
+    }
+    @media #{$sm}{
+        padding-top: 30px;
+    }
+}
+.cdx-pt-100 {
+    padding-top: 100px;
+    @media #{$md}{
+        padding-top: 80px;
+    }
+    @media #{$sm}{
+        padding-top: 60px;
+    }
+}
+.cdx-pt-110 {
+    padding-top: 110px;
+     @media #{$md}{
+        padding-top: 80px;
+    }
+    @media #{$sm}{
+        padding-top: 60px;
+    }
+}
+.cdx-pt-120 {
+    padding-top: 120px;
+    @media #{$md}{
+        padding-top: 80px;
+    }
+    @media #{$sm}{
+        padding-top: 60px;
+    }
+}
+.cdx-pt-150 {
+    padding-top: 150px;
+    @media #{$md}{
+        padding-top: 80px;
+    }
+    @media #{$sm}{
+        padding-top: 60px;
+    }
+}
+.cdx-pt-200 {
+    padding-top: 200px;
+     @media #{$lg}{
+         padding-top: 150px;
+     }
+    @media #{$md}{
+        padding-top: 120px;
+    }
+    @media #{$sm}{
+        padding-top: 100px;
+    }
+}
+
+//== padding classes bottom
+.cdx-px-30 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.cdx-pb-30 {
+    padding-bottom: 30px;
+    @media #{$md}{
+        padding-bottom: 20px;
+    }
+    @media #{$sm}{
+        padding-bottom: 15px;
+    }
+}
+.cdx-pb-40 {
+    padding-bottom: 40px;
+    @media #{$md}{
+        padding-bottom: 20px;
+    }
+}
+.cdx-pb-50 {
+    padding-bottom: 50px;
+    @media #{$md}{
+        padding-bottom: 30px;
+    }
+}
+.cdx-pb-60 {
+    padding-bottom: 60px;
+    @media #{$md}{
+        padding-bottom: 30px;
+    }
+}
+.cdx-pb-70 {
+    padding-bottom: 70px;
+    @media #{$md}{
+        padding-bottom: 40px;
+    }
+    @media #{$sm}{
+        padding-bottom: 30px;
+    }
+}
+.cdx-pb-80 {
+    padding-bottom: 80px;
+}
+.cdx-pb-90 {
+    padding-bottom: 90px;
+    @media #{$md}{
+        padding-bottom: 50px;
+    }
+    @media #{$sm}{
+        padding-bottom: 40px;
+    }
+}
+.cdx-pb-100 {
+    padding-bottom: 100px;
+    @media #{$md}{
+        padding-bottom: 80px;
+    }
+    @media #{$sm}{
+        padding-bottom: 60px;
+    }
+}
+.cdx-pb-110 {
+    padding-bottom: 110px;
+    @media #{$md}{
+        padding-bottom: 80px;
+    }
+    @media #{$sm}{
+        padding-bottom: 60px;
+    }
+}
+.cdx-pb-120 {
+    padding-bottom: 120px;
+    @media #{$md}{
+        padding-bottom: 80px;
+    }
+    @media #{$sm}{
+        padding-bottom: 60px;
+    }
+}
+
+.cdx-pb-140 {
+    padding-bottom: 140px;
+    @media #{$md}{
+        padding-bottom: 80px;
+    }
+    @media #{$sm}{
+        padding-bottom: 60px;
+    }
+}
+
+//== margin classes top
+.cdx-mt-40 {
+    margin-top: 40px;
+}
+.cdx-mt-70 {
+    margin-top: 70px;
+}
+.cdx-mt-80 {
+    margin-top: 80px;
+}
+.cdx-mt-90 {
+    margin-top: 90px;
+}
+.cdx-mt-100 {
+    margin-top: 100px;
+    @media #{$md}{
+        margin-top: 80px;
+    }
+    @media #{$sm}{
+        margin-top: 60px;
+    }
+}
+.cdx-mt-110 {
+    margin-top: 110px;
+     @media #{$md}{
+        margin-top: 80px;
+    }
+    @media #{$sm}{
+        margin-top: 60px;
+    }
+}
+.cdx-mt-120 {
+    margin-top: 120px;
+     @media #{$md}{
+        margin-top: 80px;
+    }
+    @media #{$sm}{
+        margin-top: 60px;
+    }
+}
+
+//== margin classes bottom
+.cdx-mb-70 {
+    margin-bottom: 70px;
+}
+.cdx-mb-80 {
+    margin-bottom: 80px;
+}
+.cdx-mb-90 {
+    margin-bottom: 90px;
+}
+.cdx-mb-100 {
+    margin-bottom: 100px;
+    @media #{$md}{
+        margin-bottom: 80px;
+    }
+    @media #{$sm}{
+        margin-bottom: 60px;
+    }
+}
+.cdx-mb-110 {
+    margin-bottom: 110px;
+     @media #{$md}{
+        margin-bottom: 80px;
+    }
+    @media #{$sm}{
+        margin-bottom: 60px;
+    }
+}
+.cdx-mb-120 {
+    margin-bottom: 120px;
+     @media #{$md}{
+        margin-bottom: 80px;
+    }
+    @media #{$sm}{
+        margin-bottom: 60px;
+    }
+}

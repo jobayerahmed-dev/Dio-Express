@@ -1,0 +1,117 @@
+/*--------------------------------------------
+* TRACK SHIPPING CSS
+--------------------------------------------*/
+
+.cdx-track-form-wrap {
+    background-color: #ECEDE3;
+    padding: 20px;
+    .cdx-form-title {
+        color: #030611; 
+        font-size: 40px;
+        font-weight: 700;
+        padding-bottom: 20px;
+        @media #{$sm} {
+            font-size: 30px;
+            padding-bottom: 5px;
+        }
+    } 
+}
+
+.cdx-btn-track-sumbit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F7C600; 
+    border: 0;
+    gap: 10px;
+    padding: 10px 27px;
+    color: #030611; 
+    font-size: 15px; 
+    font-weight: 500; 
+    transition: all 0.5s;
+    &:hover {
+        background-color: #FE7535;
+    }
+}
+
+.cdx-track-form {
+    background-color: var(--white);
+    box-shadow: 0px 30px 20px 0px rgba(3, 6, 17, 0.14);
+    padding: 50px 50px;
+    @media #{$sm} {
+        padding: 15px;
+    }
+    .cdx-track-input {
+        display: block;
+        width: 100%;
+        padding: 11px 20px;
+        border: 0;
+        outline: 0;
+        margin-bottom: 10px;
+        background-color: #EFEFEF;
+        &::placeholder {
+            color: #03061150; 
+            font-size: 14px; 
+            font-weight: 500; 
+        }
+        &:focus {
+            border: 0;
+            outline: 0;
+        }
+    } 
+    
+    .cdx-text {
+        color: #030611;
+        font-size: 13px;
+        font-weight: 500;
+        padding-top: 15px;
+        .cdx-link {
+            color: #FE7535;
+            font-size: 13px;
+            font-weight: 500;
+        }
+    }
+   
+}
+
+.cdx-download-box {
+    background-color: #ECEDE3;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    border-top: 1px solid #030611;
+    .cdx-download-item {
+        display: grid;
+        grid-template-columns: 40px auto;
+        gap: 24px;
+        border-bottom: 1px solid #03061114;
+        padding-bottom: 20px;
+        margin: 0px 40px 20px; 
+        @media #{$lg} {
+            margin: 0px 20px 20px; 
+        }
+        &:last-child {
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+            border-bottom: 0px solid #03061114;
+        }
+    }
+    .cdx-title {
+        color: #030611;
+        font-size: 20px;
+        font-weight: 500;
+        border-bottom: 1px solid #03061114;
+        padding-bottom: 15px;
+        margin-bottom: 30px;
+        padding-left: 40px;
+    }
+    .cdx-subtitle {
+        color: #030611;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .cdx-download-link {
+        color: #FE7535;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}

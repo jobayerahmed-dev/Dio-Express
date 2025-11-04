@@ -1,0 +1,37 @@
+/*--------------------------------------------
+* HEADER CSS SEVEN
+--------------------------------------------*/
+.cdx-navbar-area-7 {
+    position: relative;
+    z-index: 99999;
+    .cdx-navbar-area-9{
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    .cdx-btn-arrow-right-3{
+        background-color: var(--green-4);
+        color: var(--white);
+        img {
+            filter: invert(1);
+        }
+    }
+    .cdx-btn-arrow-right-3{
+        @media #{$xs} {
+            display: none;
+        }
+    }
+    .cdx-icon{
+        filter: brightness(0);
+    }
+    .cdx-menu-link:hover {
+        color: var(--dark);
+    }
+}
+
+.cdx-menu-style-7{
+    padding: 20px 25px ;
+    border-radius: 10px;
+    background: var(--white);
+    box-shadow: 0px 14px 14px 0px rgba(3, 6, 17, 0.08);
+}
+

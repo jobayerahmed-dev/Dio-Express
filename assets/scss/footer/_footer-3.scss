@@ -1,0 +1,71 @@
+
+/*--------------------------------------------
+* FOOTER CSS THREE
+--------------------------------------------*/
+
+.cdx-footer-area-3 {
+    position: relative;
+    background-color: var(--dark-6);
+    .cdx-footer-bottom { 
+        background-color: transparent;
+    }
+    .cdx-deliver-man {
+        position: absolute;
+        top: -29%;
+        right: 3%;
+        @media #{$lg} {
+            display: none;
+        }
+    }
+    .cdx-shape-1 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        @media #{$xxl} {
+            width: 20%;
+        }
+        @media #{$lg} {
+            display: none;
+        }
+    }
+    .cdx-shape-2 {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        @media #{$xxl} {
+            width: 10%;
+        }
+        @media #{$lg} {
+            display: none;
+        }
+    }
+}
+
+
+.cdx-footer-features  {
+    border-radius: 20px;
+    background: linear-gradient(178deg, #0F1336 -4.3%, #202552 98.08%);
+    padding: 40px 35px;
+    @media #{$lg} {
+        padding: 40px 10px;
+    }
+}
+
+.cdx-img-box-2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .cdx-title {
+        color: var(--white);  
+        font-size: 16px; 
+        font-weight: 500; 
+    }
+    .cdx-subtitle {
+        color: #ffffff60;  
+        font-size: 16px; 
+        font-weight: 400; 
+        @media #{$lg} {
+            font-size: 15px;
+        }
+    }
+}

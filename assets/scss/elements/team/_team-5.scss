@@ -1,0 +1,91 @@
+/*--------------------------------------------
+* TEAM CSS FIVE
+--------------------------------------------*/
+.cdx-team-item-5 {  
+     background-color: var(--yellow-2);
+     display: grid;
+     grid-template-columns: 300px auto;  
+     border-radius: 20px;
+     overflow: hidden;
+    @media #{$xxs} {
+        grid-template-columns: 1fr;
+        gap: 20px; 
+    }
+    .cdx-thumb { 
+        width: 100%;
+    }
+    .cdx-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        border: 2px solid var(--dark);
+        border-radius: 0px 20px 20px 0px;
+        @media #{$sm} {
+            border: 0px solid var(--dark);
+            padding-bottom: 30px;
+        }
+    }
+    .cdx-title {
+        color: var(--dark); 
+        font-family: var(--font-montserrat);
+        font-size: 20px; 
+        font-weight: 500; 
+        line-height: 1;
+        display: inline-block;
+        padding-left: 50px;
+        transition: var(--transition);
+        @media #{$sm} {
+         padding-left: 20px;
+        }
+        &:hover {
+            color: var(--primary);
+        }
+    }
+    .cdx-designation {
+        color: var(--gray); 
+        font-size: 16px; 
+        font-weight: 500;
+        margin-top: -5px;
+        border-bottom: 1px solid #03061120;
+        padding-left: 50px;
+        padding-bottom: 45px;
+        margin-bottom: 40px;
+        @media #{$sm} {
+         padding-left: 20px;
+         padding-bottom: 22px;
+         margin-bottom: 25px;
+        }
+    }
+    .cdx-social-2 { 
+        padding-left: 50px; 
+        @media #{$sm} {
+         padding-left: 20px;
+        }
+    }
+        
+}
+
+.cdx-social-2 {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    
+    .cdx-social-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--white);
+        width: 40px;
+        height: 40px;
+        transition: var(--transition);
+        &:hover {
+            background-color: var(--green);
+            .cdx-icon {
+                filter: invert(1);
+            }
+        }
+        .cdx-icon {
+            transition: var(--transition);
+        }
+    }
+}

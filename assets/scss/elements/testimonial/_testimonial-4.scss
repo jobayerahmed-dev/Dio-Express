@@ -1,0 +1,100 @@
+/*--------------------------------------------
+* TESTIMONIAL CSS FOUR
+--------------------------------------------*/
+.cdx-testimonial-area-4 {
+    background-color: #0e2463;
+    background-position: center right;
+    background-repeat: no-repeat; 
+    @media #{$lg} {
+       background-image: none !important;
+    } 
+    .cdx-navigation-style-6 {
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+    }
+  
+
+}
+.cdx-testimonial-galler-4 {
+    .swiper-slide {
+        height: auto;
+    }
+}
+.cdx-testimonial-thumbslide-4 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    background-color: #e1eef8; 
+    transition: var(--transition); 
+    .cdx-thumb {
+        filter: opacity(0.2);
+        transition: var(--transition);
+        pointer-events: none;
+    }
+}
+.swiper-slide-next {
+    .cdx-testimonial-thumbslide-4 {
+        background-color: #E8E2D5;
+        .cdx-thumb {
+            filter: opacity(1);
+            pointer-events: unset;
+        }
+    }
+}
+
+.cdx-testimonial-thumb-4 {
+    position: relative;
+    margin-left: 120px;
+    margin-right: 90px;
+    padding-top: 120px;
+    padding-bottom: 188px; 
+    @media #{$xxxl} {
+        padding-bottom: 215px;
+    }
+    @media #{$xxl} {
+        padding-top: 103px;
+        padding-bottom: 151px; 
+    }
+    @media #{$sm} {
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-top: 65px;
+        padding-bottom: 110px;
+    }
+}
+.cdx-testimonial-item-4 {
+    .cdx-name {
+        color: var(--white); 
+        font-size: 24px; 
+        font-weight: 400;  
+        padding: 10px 0px 30px;
+    }
+    .cdx-content {
+        color: #ffffff70; 
+        font-size: 16px; 
+        font-weight: 500; 
+        line-height: 1.7;
+    }
+     
+}
+
+// .cdx-navigation-style-6 
+.cdx-navigation-style-6 {
+    display: flex;
+    gap: 1px;
+    z-index: 9;
+    .cdx-navigation-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--primary);
+        width: 50px;
+        height: 50px;
+        transition: var(--transition);
+        &:hover {
+            background-color: var(--secondary);
+        }
+    }
+}

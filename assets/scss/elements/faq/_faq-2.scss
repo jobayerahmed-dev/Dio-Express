@@ -1,0 +1,36 @@
+/*--------------------------------------------
+* FAQ CSS TWO
+--------------------------------------------*/
+
+.cdx-faq-area-2 {
+    background-color: #0B103E;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 71% 100%;
+    padding-right: 150px;
+    .cdx-thumb {
+        padding-top: 50px;
+        @media #{$md} {
+            padding-top: 0px;
+        }
+    }
+    @media #{$xxl} {
+        padding-right: 0px;   
+    }
+    @media #{$md} {
+        padding-top: 50px;
+        background-size: 0%;
+    }
+    .cdx-section-title {
+        @media #{$xxl} {
+            font-size: 40px;
+        }
+         @media #{$md} {
+            padding-right: 150px;
+         }
+         @media #{$sm} {
+            padding-right: 0px;
+         }
+        
+    }
+}

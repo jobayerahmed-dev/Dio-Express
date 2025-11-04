@@ -1,0 +1,66 @@
+/*--------------------------------------------
+* TEAM CSS ONE
+--------------------------------------------*/
+.cdx-team-4 {
+    max-width: 400px;
+    margin: 0 auto;
+    .cdx-thumb-wrap {
+        background-color: var(--gray-8);
+        padding: 55px 47px 39px 47px;
+        transition: var(--transition);
+        &:hover{
+            background-color: var(--dark);
+           
+        }
+    }
+
+    .cdx-thumb {
+        border-radius: 50%;
+        width: 190px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .cdx-social-wrap {
+        margin-top: -25px;
+    }
+
+    .cdx-social-list {
+        background-color: var(--white);
+        width: 206px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+        transition: var(--transition);
+       
+    }
+    .cdx-social-list:hover {
+        background-color: var(--primary);
+    }
+
+    .cdx-icon {
+        filter: brightness(0);
+    }
+
+    .cdx-details {
+        text-align: center;
+        padding: 30px 0;
+
+        .cdx-name {
+            color: var(--dark);
+            font-size: 20px;
+            font-weight: 500;
+            &:hover{
+                color: var(--primary);
+            }
+        }
+
+        .cdx-designation {
+            color: var(--gray);
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+}

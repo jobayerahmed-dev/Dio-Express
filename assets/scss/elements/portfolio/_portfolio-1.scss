@@ -1,0 +1,107 @@
+/*--------------------------------------------
+* PORTFOLIO CSS ONE
+--------------------------------------------*/
+.cdx-portfolio-area {
+    overflow: hidden;
+    .cdx-section-content { 
+        padding-left: 125px;
+        @media #{$md}{
+            padding-left: 0px;
+        }
+    }
+}
+
+.cdx-portfolio-slider { 
+    transform: translate(315px, 0px);
+    @media #{$xxxl} {
+        transform: translate(25%, 0px);
+    }
+    @media #{$xxl} {
+        transform: translate(200px, 0px);
+    }
+    @media #{$xl} {
+        transform: translate(130px, 0px);
+    }
+    @media #{$lg} {
+        transform: translate(45px, 0px);
+    }
+    @media #{$md} {
+        transform: translate(40px, 0px);
+    }
+    @media #{$sm} {
+        transform: translate(0px, 0px);
+        margin: 20px 15px 0px; 
+    }
+    .cdx-portfolio-pagination {
+        padding-top: 35px;
+        color: var(--dark); 
+        font-size: 14px; 
+        font-weight: 500; 
+    }
+}
+.cdx-portfolio-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    padding: 190px 40px 40px;
+    transition: var(--transition);
+    @media #{$xxl} {
+        padding: 190px 20px 40px;
+    }
+    @media #{$xl} {
+        padding: 130px 20px 40px;
+    } 
+    
+    &::before {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%; 
+        background: linear-gradient(rgb(3 6 17 / 32%) 0%, rgb(20, 173, 17) 100%);
+        content: "";
+        transition: var(--transition);
+    }
+    
+    .cdx-details {
+        position: relative;
+    }
+    .cdx-icon-wrap {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--white);
+        border-radius: 100px; 
+    }
+    .cdx-title {
+        color: var(--white); 
+        font-family: var(--font-montserrat);
+        font-size: 30px; 
+        font-weight: 600; 
+        display: inline-block;
+        line-height: 1.2;
+        padding: 40px 0px 0px;
+        transition: var(--transition);
+        @media #{$xxl} {
+            font-size: 25px;
+        }
+        @media #{$xl} {
+            font-size: 22px;
+        }
+        &:hover {
+            color: var(--primary);
+        }
+    }
+    .cdx-content {
+        color: var(--white-2); 
+        font-size: 16px; 
+        font-weight: 500; 
+        @media #{$xl} {
+            font-size: 15px;
+        }
+    }
+}

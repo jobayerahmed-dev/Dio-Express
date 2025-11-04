@@ -1,0 +1,40 @@
+/*--------------------------------------------
+* CTA CSS
+--------------------------------------------*/
+.cdx-cta-wrap{
+    background-color: var(--dark);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    margin-top: 20px;
+    margin: 20px 100px 0 100px;
+    align-items: center;
+    @media #{$lg} {
+        padding: 20px 10px;
+        margin: 20px 0 0 0;
+    }
+    @media #{$md} {
+        padding: 0px 10px;
+    }
+    @media #{$sm} {
+          flex-wrap: wrap;
+          justify-content: center;
+        gap: 5px;
+    }
+    .cdx-cta-title{
+    position: relative;
+    color: var(--white);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    }
+    .cdx-line{
+        position: relative;
+        top: 20px;
+        right: 50%;
+        // display: none;
+        @media #{$lg} {
+            display: none;
+        }
+    }
+}

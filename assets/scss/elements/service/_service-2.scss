@@ -1,0 +1,173 @@
+
+/*--------------------------------------------
+* SERVICE CSS TWO
+--------------------------------------------*/
+.cdx-single-service-card-2 {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.7s; 
+    .cdx-view-wrap {
+        background-color: var(--sky-1);
+        .cdx-thumb img {
+            width: 100%;
+        }
+        .cdx-details {
+            padding: 50px 30px 40px;
+        }
+        .cdx-icon {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            margin-top: -92px;
+            z-index: 3;
+            position: relative;
+            img {
+                z-index: 2;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                background-color: var(--primary);
+                border-radius: 50%;
+                z-index: 2;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                left: 6px;
+                top: 4px;
+                height: 100%;
+                width: 100%;
+                background-color: var(--white);
+                border-radius: 50%;
+                z-index: -1;
+            }
+        }
+    }
+    .cdx-hover-wrap {
+        position: absolute;
+        left: 0;
+        top: 30px;
+        height: 100%;
+        width: 100%;
+        z-index: 3;
+        padding: 60px 30px;
+        background-color: var(--primary);
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.7s;
+        .cdx-icon {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            z-index: 3;
+            position: relative;
+            img {
+                z-index: 2;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                background-color: var(--white);
+                border-radius: 50%;
+                z-index: 2;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                left: 6px;
+                top: 4px;
+                height: 100%;
+                width: 100%;
+                background-color: var(--dark);
+                border-radius: 50%;
+                z-index: -1;
+            }
+        }
+        .cdx-title a:hover {
+            color: var(--secondary);
+        }
+        .cdx-description {
+            color: var(--dark-3);
+        }
+    }
+    .cdx-read-more-btn-small {
+        padding: 14px 20px;
+        background-color: var(--white);
+        font-weight: 500;
+        margin-top: 65px;
+        display: inline-block;
+        @media #{$xl}{
+            margin-top: 30px;
+        }
+        &:hover {
+            background-color: var(--secondary);
+            color: var(--dark);
+        }
+    }
+    .cdx-right-shape {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    &:hover { 
+        box-shadow: 0px 0px 0px 0px rgba(3, 6, 17, 0.06), 6px 14px 24px 0px rgba(18, 16, 16, 0.06);
+        .cdx-hover-wrap {
+            visibility: visible;
+            opacity: 1;
+            top: 0;
+            .cdx-right-shape {
+                width: 220px;
+            }
+        }
+    }
+}
+
+
+.cdx-service-slider-1 {
+    .swiper-slide {
+        box-shadow: 10px 10px 0px 0px rgba(3, 6, 17, 0.06), 6px 14px 24px 0px rgba(18, 16, 16, 0.06);
+        transition: 0.7s ease-in-out;
+    }
+    .swiper-slide-active {
+        transition: 0.7s ease-in-out;
+        box-shadow: 0px 0px 0px 0px rgba(3, 6, 0, 0.06), 0px 0px 4px 0px rgba(0, 16, 16, 0.06); 
+        .cdx-hover-wrap {
+            visibility: visible;
+            opacity: 1;
+            top: 0;
+            .cdx-right-shape {
+                width: 220px;
+            }
+        }
+    }
+}
+
+
+.cdx-service-area-2 {
+    .cdx-heading-text-slider {
+        margin-bottom: -153px;
+        @media #{$xl}{
+            margin-bottom: -125px;
+        }
+        @media #{$md}{
+            margin-bottom: -90px;
+        }
+    }
+}

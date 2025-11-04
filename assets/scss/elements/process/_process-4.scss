@@ -1,0 +1,144 @@
+/*--------------------------------------------
+* PROCESS CSS FOUR
+--------------------------------------------*/
+
+ .cdx-process-box {
+    &:nth-child(1) {
+        .cdx-shape { 
+            top: 115px;
+            transform: rotate(0deg); 
+            @media #{$xl} {
+              top: 105px;  
+            }
+        }
+    }
+    &:nth-child(2) {
+        .cdx-shape { 
+            transform: rotate(180deg);  
+        }
+    }
+    &:nth-child(3) {
+        .cdx-shape { 
+            top: 115px;
+            transform: rotate(0deg); 
+            @media #{$xl} {
+              top: 105px;  
+            }
+        }
+    }
+    &:nth-child(4) {
+        .cdx-shape {  
+            transform: rotate(180deg); 
+        }
+    }
+}
+    
+.cdx-process-border {
+    border: 1px dashed #03061110;
+    transform: translate(0px, 116px);
+    z-index: -1;
+    position: relative;
+    @media #{$xl} {
+        display: none;
+    }
+}
+
+.cdx-process-item-4 {
+    position: relative;
+    text-align: center;  
+    .cdx-thumb-wrap {
+        width: 210px;
+        height: 210px;
+        border-radius: 50%; 
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .cdx-thumb {
+        width: auto;
+        height: 100%;
+    }
+    .cdx-number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background-color: var(--primary);
+        border-radius: 50%;
+        color: var(--dark); 
+        font-size: 13px; 
+        font-weight: 500;  
+        position: absolute;
+        top: 3%;
+        right: 20%; 
+        @media #{$lg} {
+            top: -1%;
+        }
+        @media #{$md} {
+            top: 6%;
+        }
+        @media #{$sm} {
+            right: 30%;
+        }
+        @media #{$xs} {
+            right: 30%;
+        }
+        @media #{$xxs} {
+            right: 20%;
+        }
+    }
+    .cdx-shape {
+        width: 300px;
+        height: 150px;
+        border-bottom-left-radius: 160px;
+        border-bottom-right-radius: 160px; 
+        background-color: var(--sky-2);  
+        position: absolute;
+        top: -35px;
+        left: 0%;
+        z-index: -1;
+        @media #{$xl} {
+           display: none;
+        }
+        @media #{$lg} {
+            width: 215px;
+        }
+        @media #{$lg} {
+            width: 300px;
+            height: 140px;
+            left: 6%;
+        }
+        @media #{$md} {
+            top: -30px;
+        }
+        @media #{$sm} {
+            display: none;
+        }
+    }
+    .cdx-details {
+        padding-top: 80px;
+        @media #{$xl} {
+            padding-top: 50px;
+        }
+        @media #{$lg} {
+            padding-top: 20px;
+        }
+        @media #{$md} {
+            padding-top: 25px;
+        }
+    }
+    .cdx-title {
+        color: var(--dark); 
+        font-family: var(--font-montserrat);
+        font-size: 20px; 
+        font-weight: 600;  
+    }
+    .cdx-text {
+        color: var(--gray); 
+        font-size: 16px; 
+        font-weight: 500; 
+        @media #{$lg} {
+            font-size: 14px;
+        }
+    }
+}

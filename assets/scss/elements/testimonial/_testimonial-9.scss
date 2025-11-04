@@ -1,0 +1,112 @@
+
+/*--------------------------------------------
+* TESTIMONIAL CSS NINE
+--------------------------------------------*/
+.cdx-testimonial-area-9 {
+    background-color: #e6ecec; 
+    position: relative;
+}
+
+.cdx-testimonial-slider-9 {
+    transform: translate(0px, -21%);
+    @media #{$sm} {
+        transform: translate(0px, -12%);
+    }
+}
+.cdx-testimonial-slide-9 {
+    text-align: center;
+    .cdx-client-wrap {
+        width: 206px;
+        height: 206px;
+        border-radius: 100px;
+        overflow: hidden; 
+        margin: 0 auto;
+    }
+    .cdx-client-img {
+        width: auto; 
+        height: 100%;
+    }
+   .cdx-content {
+        color:#030611; 
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 1.4;
+        padding: 50px 170px 30px;
+        @media #{$lg} {
+           font-size: 27px; 
+           padding: 50px 150px 30px;
+        }
+        @media #{$md} {
+            padding: 50px 100px 30px;
+        }
+        @media #{$sm} {
+            font-size: 20px;
+            padding: 50px 70px 30px; 
+        }
+        @media #{$xxs} {
+            font-size: 18px;
+            padding: 30px 45px 20px;
+        }
+   }
+   .cdx-name {
+    color: #FE7535; 
+    font-size: 20px; 
+    font-weight: 500; 
+    line-height: 1;
+     @media #{$sm} {
+        font-size: 16px;
+     }
+   }
+   .cdx-designation {
+        color: #808589;
+        font-size: 18px;
+        font-weight: 500;
+         @media #{$sm} {
+            font-size: 14px;
+         }
+   }
+}
+
+.cdx-navigation-wrap-9 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; 
+    position: absolute;
+    top: 50%;
+    .cdx-btn-navigation {
+        color: #808589; 
+        font-size: 16px;
+        font-weight: 500;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        position: relative;
+        z-index: 9;
+        transition: var(--transition);
+        &:hover {
+            color: var(--primary);
+        }
+        &:nth-child(1) {
+            border-right: 1px solid #03061160;
+            padding-right: 70px;
+            @media #{$md} {
+                padding-right: 20px;
+            }
+            @media #{$sm} {
+                padding-right: 15px;
+                border-right: 0px solid #03061160;
+            }
+        }
+        &:nth-child(2) {
+            border-left: 1px solid #03061160;
+            padding-left: 70px;
+            @media #{$md} {
+                padding-left: 20px;
+            }
+            @media #{$sm} {
+                padding-left: 15px;
+                border-left: 0px solid #03061160;
+            }
+        }
+    }
+}

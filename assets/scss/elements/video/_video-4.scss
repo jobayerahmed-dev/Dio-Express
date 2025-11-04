@@ -1,0 +1,52 @@
+/*--------------------------------------------
+* VIDEO CSS FOUR
+--------------------------------------------*/
+.cdx-video-area-4{
+    .cdx-process-wrap {
+        position: relative;
+        padding-bottom: 40px;
+        mask-repeat: no-repeat;
+        mask-size: 100%;
+    
+        .cdx-video-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            width: 110px;
+            height: 110px;
+            top: 0px;
+            left: 0px;
+            z-index: 1;
+            background-color: var(--blue);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            @media #{$lg} {
+                width: 90px;
+            height: 90px;
+            }
+            @media #{$sm} {
+                width: 60px;
+            height: 60px;
+            }
+        }
+    }
+    .cdx-title-wrap{
+        .cdx-icon{
+            position: absolute;
+            top: 10px;
+            left: 0px;
+           
+        
+        }
+        .cdx-title {
+            color: #FFF;
+            font-size: 40px;
+            font-weight: 700;
+            padding-right: 30px;
+            margin-left: 40px;
+        }
+    }
+
+}
+
+

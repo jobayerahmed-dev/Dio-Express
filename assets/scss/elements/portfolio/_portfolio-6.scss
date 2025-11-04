@@ -1,0 +1,61 @@
+/*--------------------------------------------
+* PORTFOLIO CSS SIX
+--------------------------------------------*/
+.cdx-portfolio-area-6 {
+ padding-left: 145px; 
+ @media #{$xxl} {
+    padding-left: 15px;
+ }
+}
+
+ .cdx-portfolio-item-9.cdx-style-6 {
+    border-left: 1px solid #03061114; 
+    padding: 0px 30px 55px 30px; 
+    @media #{$lg} {
+        border-left: 0px;
+    }
+    .cdx-thum-wrap {
+        &::before {
+           background: linear-gradient(180deg, rgba(4, 41, 86, 0.00) 0%, #1353A0 100%);
+        }   
+    }
+    .cdx-icon-wrap { 
+        background-color: var(--red-2); 
+    }
+    .cdx-icon {
+        filter: invert(1);
+    }
+    .cdx-title-wrap {
+        padding-top: 25px; 
+    }
+    h3 {
+        margin-bottom: 0px;
+    }
+ }
+ 
+ .cdx-portfolio-box {
+    &:nth-child(4) {
+        .cdx-portfolio-item-9.cdx-style-6 { 
+            padding-bottom: 0px; 
+            @media #{$sm} {
+                padding-bottom: 40px;
+            }
+        }
+    }
+    &:nth-child(5) {
+        .cdx-portfolio-item-9.cdx-style-6 { 
+            padding-bottom: 0px; 
+            @media #{$sm} {
+                padding-bottom: 40px;
+            }
+        }
+    }
+    &:nth-child(6) {
+        .cdx-portfolio-item-9.cdx-style-6 { 
+            padding-bottom: 0px; 
+             @media #{$sm} {
+                padding-bottom: 40px;
+            }
+        }
+    }
+ }

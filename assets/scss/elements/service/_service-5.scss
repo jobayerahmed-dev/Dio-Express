@@ -1,0 +1,106 @@
+/*--------------------------------------------
+* SERVICE CSS Five
+--------------------------------------------*/
+.cdx-service-area-5 {
+    background-color: var(--sky-5);
+    margin-left: 100px;
+    margin-right: 100px; 
+    padding-top: 360px;
+    margin-top: -258px;
+    @media #{$xxl} {
+        margin-left: 20px;
+        margin-right: 20px; 
+    }
+    @media #{$xl} {
+        margin-left: 0px;
+        margin-right: 0px; 
+    }
+    @media #{$md} {
+        padding-top: 240px;
+        margin-top: -175px;
+    }
+}
+
+.cdx-service-box-5 {
+    &:nth-child(1){
+        .cdx-icon-wrap {
+            background-color: #fff1eb;
+        }
+    }
+    &:nth-child(2){
+        .cdx-icon-wrap {
+            background-color: #ecedfb;
+        }
+    }
+    &:nth-child(3){
+        .cdx-icon-wrap {
+            background-color: #fbeafc;
+        }
+    }
+    &:nth-child(4){
+        .cdx-icon-wrap {
+            background-color: #e8f5eb;
+        }
+    }
+}
+
+.cdx-service-card-5 {
+    position: relative;
+    background-color: var(--white); 
+    box-shadow: 6px 14px 24px 0px rgba(18, 16, 16, 0.10);
+    display: grid;
+    grid-template-columns: 90px auto;
+    gap: 36px;
+    @media #{$sm} {
+        gap: 15px;
+    }
+    .cdx-details {
+        padding: 30px 85px 41px 0px; 
+        @media #{$sm} {
+            padding: 30px 40px 41px 0px;
+        }
+    }
+    .cdx-icon-wrap {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 90px;
+        height: 90px;
+    }
+    .cdx-title {
+        color: var(--dark); 
+        font-size: 24px; 
+        font-weight: 500; 
+        transition: var(--transition);
+        &:hover {
+            color: var(--primary);
+        }
+        @media #{$sm} {
+            font-size: 20px;
+        }
+    }
+    .cdx-text {
+        color: var(--gray); 
+        font-size: 16px; 
+        font-weight: 500; 
+        padding-right: 80px;
+        @media #{$lg} {
+            padding-right: 0px;
+        }
+    }
+    .cdx-btn-link {
+        width: 50px;
+        height: 50px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--gray-5);
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+        transition: var(--transition);
+        &:hover {
+            background-color: var(--primary);
+        }
+    }
+}

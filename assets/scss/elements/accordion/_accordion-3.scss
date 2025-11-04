@@ -1,0 +1,78 @@
+/*--------------------------------------------
+* ACCORDION CSS THREE
+--------------------------------------------*/
+.cdx-accordion-style-3 {
+    background-color: var(--dark);
+    .accordion-item {
+        border: 0;
+        background: transparent;
+        .accordion-header {
+            border: 0;
+            border-bottom: 1px solid var(--dark-3);
+            padding: 20px 30px;
+            .accordion-button {
+                background-color: transparent;
+                padding: 6px 0;
+                font-size: 20px;
+                font-weight: 500;
+                box-shadow: none;
+                color: var(--white);
+                &:after {
+                    content: '+';
+                    height: 0;
+                    width: 0;
+                    top: -10px;
+                    transform: none;
+                    position: relative;
+                }
+            }
+            .accordion-button:not(.collapsed)::after {
+                content: '-';
+            }
+        }
+        .accordion-body {
+            padding: 25px 30px;
+            border-bottom: 1px solid #ffffff14;
+        }
+        &:last-child {
+            .accordion-header {
+                border-bottom: 0;
+            }
+            .accordion-body {
+                border-bottom: 0;
+                border-top: 1px solid var(--dark-3);
+            }
+        }
+    }
+    .cdx-content {
+        color: var(--gray); 
+        font-size: 16px; 
+        font-weight: 500; 
+    }
+}
+
+.cdx-location-area {
+    position: relative;
+    margin-bottom: -10px;
+    iframe {
+        height: 500px;
+        width: 100%;
+    }
+    .cdx-location-accordion {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 1300px;
+        @media #{$lg} {
+            left: 2%;
+            transform: translate(-0%, -50%);
+            width: 100%;
+        }
+        @media #{$sm}{
+            width: auto;
+            left: 3%;
+            right: 3%;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+
+/*--------------------------------------------
+* ACCORDION CSS TWO
+--------------------------------------------*/
+.cdx-accordion-style-2 {
+    .accordion-item {
+        border: 0;
+        margin-bottom: 15px;
+        background-color: rgba(255,255,255,0.1);
+        border-radius: 0;
+        .accordion-header {
+            border: 0;
+            .accordion-button {
+                background-color: transparent;
+                padding: 15px 18px;
+                font-size: 16px;
+                font-weight: 500;
+                box-shadow: none;
+                color: var(--white);
+                border-radius: 0;
+                @media #{$sm} {
+                    padding: 15px 10px;
+                    font-size: 15px;
+                }
+                &:after {
+                    filter: brightness(100);
+                    background-color: rgba(255,255,255,0.1);
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 50%;
+                    background-position: center;
+                    background-size: 16px;
+                }
+            }
+            .accordion-button:not(.collapsed) {
+                background-color: var(--primary);
+                color: var(--dark);
+                &:after {
+                    filter: brightness(1);
+                    background-color: var(--white);
+                }
+            }
+        }
+        .accordion-body {
+            padding: 25px 18px;
+        }
+    }
+    .cdx-content {
+        color: #ffffff50; 
+        font-size: 16px; 
+        font-weight: 500; 
+    }
+}
+
+.cdx-faq-area-2-inner {
+    padding: 110px 150px 0;
+}

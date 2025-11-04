@@ -1,0 +1,24 @@
+/*--------------------------------------------
+* ROLLSLIDER CSS ONE
+--------------------------------------------*/
+.cdx-rollslider-area-1 {
+    background-color: var(--green-2);
+    padding: 20px 0px;
+    .swiper-wrapper {
+        transition-timing-function: linear;
+    }
+}
+.cdx-rollslide-1 {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    width: auto !important;
+    .cdx-title {
+        color: var(--blue);
+        font-size: 30px;
+        font-weight: 600;
+        @media #{$xxl} {
+            font-size: 21px;
+        }
+    }
+}

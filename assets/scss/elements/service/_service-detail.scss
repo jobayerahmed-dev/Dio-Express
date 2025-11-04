@@ -1,0 +1,117 @@
+/*--------------------------------------------
+* SERVICE DETAIL CSS
+--------------------------------------------*/
+.cdx-service-detail-content {
+    .cdx-section-content {
+        padding-bottom: 30px;
+    }
+    .cdx-section-title-lg {
+        padding-top: 30px;
+    }
+    .cdx-service-video-box {
+        background-repeat: no-repeat;
+        padding: 236px 30px 120px;
+        margin-bottom: 80px;
+        @media #{$lg} {
+           margin-bottom: 30px;   
+        }
+        @media #{$sm} {
+            padding: 180px 30px 85px;
+        }
+    }
+    .cdx-accordion-style-4 .accordion-item { 
+        margin-bottom: 14px; 
+    }
+}
+
+.cdx-features-list-2 {
+    .cdx-list-item { 
+        display: inline-flex;
+        align-items: center;
+        gap: 15px;
+        color: var(--dark); 
+        font-size: 16px; 
+        font-weight: 400; 
+        padding-bottom: 10px;
+        &:last-child {
+            padding-bottom: 0px;
+        }
+    }
+}
+
+// Widget 
+.cdx-widget-service-list {
+    .cdx-category-link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &:hover {
+            .cdx-icon {
+                transform: rotate(-45deg);
+            }
+        }
+        .cdx-icon {
+           transition: var(--transition);
+        }
+    }
+}
+
+.cdx-widget-download {
+    .cdx-download-wrap {
+        padding: 0px 30px 5px;
+    }
+    .cdx-download-list {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid rgba(4, 6, 24, 0.10); 
+        &:last-child {
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+            border-bottom: 0px;
+        }
+    }
+    .cdx-download-link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--gray);
+        font-size: 18px; 
+        font-weight: 500; 
+        transition: var(--transition); 
+        @media #{$sm} {  
+            font-size: 16px;
+        }
+        &:hover {
+            color: var(--primary);
+        } 
+    }
+    .cdx-pdf-icon {
+        padding-right: 10px;
+    }
+}
+
+.cdx-widget-cta-2 {
+    padding: 50px 60px 370px 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media #{$lg} { 
+        padding: 50px 30px 260px 30px;  
+    }
+    @media #{$md} {
+        padding:  50px 30px 50px 30px; ;
+    }
+    .cdx-title {
+        color: var(--dark); 
+        font-size: 30px; 
+        font-weight: 600; 
+        padding-bottom: 20px; 
+        @media #{$lg} {
+            font-size: 25px;
+        }
+    }
+    .cdx-btn-primary {
+        background-color: var(--dark);
+        color: var(--white);
+        padding: 12px 25px;
+    }
+}

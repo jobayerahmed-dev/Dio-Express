@@ -1,0 +1,114 @@
+
+/*--------------------------------------------
+* TEAM CSS NINE
+--------------------------------------------*/
+.cdx-pagination-bullet-2 {
+    margin-top: 50px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+     transition: var(--transition);
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        transition: var(--transition);
+    }
+    .swiper-pagination-bullet-active {
+        width: 26px;
+        height: 26px; 
+        border: 1px solid var(--green);
+        background-color: transparent;
+        position: relative; 
+        &::before {
+            position: absolute;
+            width: 4px; 
+            height: 4px;
+            background-color: var(--green);
+            content: "";
+            border-radius: 100%;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        }
+    }
+}
+
+.cdx-team-slider-9 {
+    padding-top: 85px;
+}
+
+.cdx-team-slide-9 {
+    background-color: #E6ECEC;
+    text-align: center;
+    padding: 0px 40px 44px;
+    &:hover {
+        .cdx-thumb {
+            transform: scale(1.1);
+        }
+    }
+    
+    .cdx-thumb-wrap {
+        width: 160px;
+        height: 160px;
+        border-radius: 100px; 
+        overflow: hidden;
+        margin: -85px auto 0; 
+        .cdx-thumb {
+            width: auto;
+            height: 100%; 
+            transition: var(--transition);
+        }
+    }
+    .cdx-name {
+        color: #030611;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1;
+        display: inline-block;
+        padding: 25px 0px 5px;
+        transition: var(--transition);
+        &:hover {
+            color: var(--primary);
+        }
+    }
+    .cdx-designation {
+        color: #808589;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: normal;
+        padding-bottom: 15px;
+    }
+    .cdx-social-list {
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: var(--transition); 
+        &:nth-child(1) {
+            background-color: #F7C600; 
+            &:hover {
+               background-color: #030611;
+            } 
+        }
+        &:nth-child(2) {
+            background-color: #0A66C2;
+            &:hover {
+                background-color: #030611;
+            } 
+        }
+        &:nth-child(3) {
+            background-color: #030611;
+            &:hover {
+                background-color: #F7C600; 
+            } 
+        }
+        &:nth-child(4) {
+            background-color: #1877F2;
+            &:hover {
+                 background-color: #030611;
+            } 
+        }
+    }
+}

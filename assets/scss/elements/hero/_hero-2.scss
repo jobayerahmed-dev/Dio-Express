@@ -1,0 +1,190 @@
+/*--------------------------------------------
+* HERO CSS TWO
+--------------------------------------------*/
+
+.cdx-hero-area-2 {
+    background-color: #0b1140;
+    position: relative;
+    overflow: hidden;
+    .cdx-shadow-wrap {
+        width: 1158px;
+        height: 1158px;
+        border-radius: 50%;
+        opacity: 0.3;
+        background: #1B2FE3;
+        filter: blur(300px);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .cdx-bottom-shape {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    } 
+    .cdx-banner-search-form {  
+        transform: translate(0px, -150px);
+        position: relative;
+        z-index: 999;
+        @media #{$lg} {
+            transform: translate(0px, -110px);
+        }
+    } 
+    .cdx-slider-nav-btn  {
+        background-color: #ffffff10;
+        &:hover {
+            .cdx-icon {
+                filter: brightness(0);
+            }
+        }
+    }
+    .cdx-circle-wrap {
+        position: absolute;
+        z-index: 999;
+        top: 0;
+        left: 50%;
+    }
+    .cdx-round-circle-1 {
+        width: 1418px;
+        height: 1418px;
+        border-radius: 50%;  
+        position: absolute; 
+        background: rgba(255, 255, 255, 0.03); 
+        left: 50%;
+        transform: translate(-50%, 10%);
+        @media #{$xl} {
+            width: 1200px;
+            height: 1100px;
+        }
+        @media #{$lg} {  
+            display: none;
+        }
+    }
+    .cdx-round-circle-2 {
+        width: 812px;
+        height: 812px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.06);  
+        position: absolute; 
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+}
+
+.cdx-hero-slider-2 { 
+    position: relative;
+    padding-bottom: 25px;
+    .cdx-hero-2-prev {
+        position: absolute;
+        left: 60px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 9;
+        @media #{$md} {
+            left: 15px;
+        }
+        @media #{$sm} {
+            transform: translateY(-100%);
+        }
+        
+    }
+    .cdx-hero-2-next {
+        position: absolute;
+        right: 60px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 9;
+        @media #{$md} {
+            right: 15px;
+        }
+        @media #{$sm} {
+            transform: translateY(-100%);
+        }
+    }
+}
+
+
+.cdx-hero-slider-inner-2 {
+    position: relative; 
+    .cdx-content {
+        max-width: 1290px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+        margin-top: 30px;
+        padding-bottom: 130px;
+    }
+    .cdx-title {
+        font-size: 102px;
+        font-weight: 800;
+        color: var(--white);
+        border-bottom: 1px solid var(--gray-4);
+        padding-bottom: 15px;
+        margin-bottom: 40px;
+        @media #{$xxl} {
+            font-size: 80px;
+        }
+        @media #{$lg} {  
+            font-size: 50px;
+        }
+        @media #{$sm} {  
+            font-size: 30px;
+        }
+    }
+}
+
+.cdx-banner-search-form {
+    background-color: var(--dark);
+    display: flex;
+    justify-content: space-between;
+    @media #{$sm} {  
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    input {
+        height: 80px;
+        width: 40%;
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+        color: var(--white);
+        padding: 0 20px;
+        border-right: 1px solid rgba(255,255,255,0.2) !important; 
+        &:focus {
+            border: 0;
+        }
+        @media #{$sm} {
+            width: 100%;
+        }
+    }
+    select {
+        width: 33%;
+        background-color: transparent;
+        border: 0 !important;
+        outline: 0;
+        color: var(--white-2);
+        padding: 0 20px;
+        margin-right: 2%;
+        option {
+            color: var(--dark);
+        }
+         @media #{$sm} {
+            width: 100%;
+        }
+    }
+    .cdx-btn-primary {
+        width: 25%;
+        height: 80px; 
+        @media #{$md} {
+            width: 30%; 
+        }
+        @media #{$sm} {
+            width: 56%;
+            height: 56px;
+            margin-top: 20px;
+            margin-left: 25px;
+        }
+    }
+}

@@ -1,0 +1,93 @@
+/*--------------------------------------------
+* ABOUT CSS TWO
+--------------------------------------------*/
+.cdx-about-area-2 {
+    position: relative;
+    @media #{$sm} { 
+        padding-top: 120px;
+    }
+    .cdx-left-title {
+        position: absolute;
+        left: -344px;
+        bottom: 260px;
+        transform: rotate(-90deg);
+        border-bottom: 1px solid var(--border-color);
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        padding: 0px 50px 5px;
+        @media #{$lg} {
+            display: none;
+        }
+    }
+    .cdx-about-img-3 {
+        position: absolute;
+        top: 17%;
+        right: 15%;
+        z-index: -1;
+        @media #{$xxxl} {
+            right: 24%;
+        }
+        @media #{$xxl} {
+            right: 5%;
+        }
+        @media #{$lg} {
+            display: none;
+        }
+    }
+    // .cdx-icon-list-item{
+    //     display: flex;
+    // }
+}
+.cdx-img-box-wrap-2{ 
+    position: relative;
+    padding-left: 70px; 
+    .cdx-about-img-1 {
+        position: absolute;
+        bottom: 0;
+        left: 0; 
+        box-shadow: 0px 30px 130px 0px rgba(23, 22, 28, 0.18);
+    }
+    .cdx-about-img-3 {
+        position: absolute;
+        top: 50px;
+        left: -30px;
+        width: 110%;
+        z-index: -1;
+    } 
+    .cdx-year-box-2 {
+        position: absolute;
+        top: 114px;
+        right: 185px;
+        @media #{$lg} {
+            right: 30px;
+        }
+        @media #{$sm} {
+            display: none;
+        }
+    }
+}
+
+.cdx-year-box-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    position: relative;
+    z-index: 9;
+    width: 160px;
+    height: 160px;
+    background-color: var(--dark); 
+    border-radius: 50%;
+    .cdx-title {
+        color: var(--white);  
+        font-size: 40px; 
+        font-weight: 700; 
+    }
+    .cdx-text {
+        color: var(--white); 
+        font-size: 18px; 
+        font-weight: 500; 
+    }
+}

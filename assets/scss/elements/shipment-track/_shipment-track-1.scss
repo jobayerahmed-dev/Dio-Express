@@ -1,0 +1,64 @@
+/*--------------------------------------------
+* SHIPPING TRACK CSS ONE
+--------------------------------------------*/
+
+.cdx-shipment-track-area-1 {
+    .cdx-stoke-title-large {  
+        transform: translate(0px, -108px); 
+        position: relative;
+        z-index: 2;
+        @media #{$xxl}{
+            transform: translate(0px, -75px); 
+        }
+        @media #{$lg}{
+            transform: translate(0px, -58px); 
+        }
+        @media #{$md}{
+            transform: translate(0px, -38px); 
+        }
+    }
+}
+
+.cdx-shipment-track-item {
+    .cdx-subtitle {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        img {
+            background-color: #F0F0F1;
+            padding: 15px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+    }
+    .cdx-description {
+        @media #{$lg}{ 
+            padding-right: 50px;
+        }
+    }
+}
+
+.cdx-shipment-track-slider-1 {
+    position: relative;
+    .cdx-slider-pagination-wrap:after {
+        display: none;
+    }
+    .cdx-slider-pagination-wrap {
+        position: absolute;
+        right: -27px;
+        top: 50%;
+        transform: translateY(-50%);
+        transform: rotate(90deg);
+        margin-top: 0;
+        z-index: 3;
+        @media #{$sm} {
+            top: 67%;
+        }
+    }
+    .cdx-slider-pagination-wrap .cdx-slider-bottom-pagination-2 {
+        margin-top: 0;
+    }
+    .cdx-slider-pagination-wrap .cdx-slider-bottom-pagination-2 .swiper-pagination-bullet {
+        transform: rotate(-90deg);
+    }
+}

@@ -1,0 +1,70 @@
+/*--------------------------------------------
+* HEADER CSS FOUR
+--------------------------------------------*/
+.cdx-navbar-area-4 {
+    position: relative;
+    z-index: 3;
+    @media #{$lg}{
+        padding: 0;
+    }
+    .cdx-main-logo{
+        border-right:1px solid rgba(23, 22, 28, 0.14);
+        @media #{$lg} {
+            border-right: none;
+        }
+    }
+    .navbar {
+         @media #{$sm} {
+            background-color: transparent;
+            margin-left: 0px; 
+         }
+        &:after {
+            content: '';
+            position: absolute;
+            right: -50%;
+            top: 0;
+            height: 100%;
+            width: 50%;
+             @media #{$sm} {
+                display: none;
+            }
+        }
+        .cdx-menu-icon{
+            filter: brightness(0);
+        }
+    }
+    .cdx-btn-arrow-right-6{
+        padding: 12px 25px;
+        background-color: var(--dark);
+        @media #{$sm} { 
+            display: none;
+        }
+    }
+    .cdx-search-wrap {
+        border-radius: 0;
+        .cdx-search-form{
+            @media #{$sm} {
+                left: 0;
+                
+            }
+        }
+    
+    }
+}
+
+.cdx-navbar-menu.cdx-style-4 { 
+    .cdx-menu-link {
+        color: var(--gray); 
+        &:hover {
+            color: var(--dark);
+        }
+    }
+    .cdx-menu-item-has-children:after {
+        right: -17px;
+        width: 12px;
+        background-image: url(../images//home-3/icon/arrow-down.svg);
+    }
+   
+}
+
+

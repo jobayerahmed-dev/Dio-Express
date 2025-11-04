@@ -1,0 +1,48 @@
+/*--------------------------------------------
+* SUBSCRIBE CSS ONE
+--------------------------------------------*/
+
+.cdx-subscribe-inner-1 {
+    position: relative;
+    background-color: var(--dark);
+    padding: 10px; 
+    input {
+        padding: 10px 120px 10px 18px;
+        width: 100%; 
+        border: 0 !important;
+        background-color: transparent;
+        color: var(--white);
+    }
+    button {  
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        border: 0;
+    }
+}
+
+
+//subscribe-area 
+.cdx-subscribe-area {
+    position: relative;
+    padding: 55px 0 45px;
+    .cdx-shape-img-1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .cdx-shape-img-2 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        @media #{$xs}{
+            display: none;
+        }
+    }
+    .cdx-section-heading .cdx-section-title {
+        @media #{$xs}{
+            font-size: 30px;
+        }
+    }
+}

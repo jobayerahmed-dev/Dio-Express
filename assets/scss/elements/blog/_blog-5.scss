@@ -1,0 +1,98 @@
+/*--------------------------------------------
+* BLOG CSS FIVE
+--------------------------------------------*/
+.cdx-blog-item-5 { 
+    background-color: var(--gray-8);
+    padding: 20px 0px 70px; 
+    transition: var(--transition);
+    &:hover {
+        background-color: var(--white-2);
+    }
+    .cdx-img-box-3 {
+        padding-left: 30px;
+    }
+    .cdx-meta {
+        display: flex;
+        align-items: center;
+        gap: 15px; 
+        border-top: 1px solid rgba(18, 16, 16, 0.14);
+        padding: 50px 30px 20px;
+        margin-top: 20px;
+    }
+    .cdx-meta-list {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--gray); 
+        font-size: 14px; 
+        font-weight: 500; 
+    }
+    .cdx-meta-link {
+        background-color: var(--primary);
+        color: var(--dark);
+        padding: 3px 11px;
+    }
+    .cdx-title {
+        color: var(--dark); 
+        font-size: 20px; 
+        font-weight: 500; 
+        display: inline-block;
+        line-height: 1.3; 
+        padding: 0px 30px 70px;
+        transition: var(--transition);
+        @media #{$md} {
+            padding: 0px 250px 70px 30px;
+        }
+        @media #{$sm} {
+            padding: 0px 30px 70px;
+        }
+        &:hover {
+            color: var(--primary);
+        }
+    }
+    .cdx-author {
+        color: var(--gray); 
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400; 
+        transition: var(--transition);
+        &:hover {
+            color: var(--primary);
+        }
+    }
+    .cdx-btn-arrow-right-4 {
+        margin-left: 30px;
+    }
+   
+}
+
+// cdx-img-box-3
+.cdx-img-box-3 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    .cdx-thumb-wrap {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden; 
+    }
+    .cdx-thumb {
+        width: auto;
+        height: 100%;
+    }
+    .cdx-name {
+        color: var(--dark); 
+        font-family: var(--font-inter);
+        font-size: 16px; 
+        font-weight: 600; 
+        line-height: 1;
+    }
+    .cdx-designation {
+        color: rgba(4, 6, 24, 0.60); 
+        font-family: var(--font-inter);
+        font-size: 14px; 
+        font-weight: 500;
+        margin: 0px;
+    }
+}

@@ -1,0 +1,97 @@
+// Banner CSS 
+.cdx-banner-area { 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-color: #ECEDE3;
+    overflow: hidden;
+    position: relative;
+    padding-top: 230px; 
+    margin-top: -150px;
+    .cdx-img-1 {
+        position: absolute;
+        right: 7%;
+        @media #{$sm} {
+            display: none;
+        }
+    }
+    .cdx-img-2 {
+        position: absolute;
+        bottom: 0;
+        @media #{$sm} {
+            display: none;
+        }
+    }
+}
+.cdx-banner-title  {
+    color: #030611;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    @media #{$lg} {
+        font-size: 40px;
+    }
+    @media #{$sm} {
+        font-size: 30px;
+    }
+}
+
+// breadcrumb style 
+.cdx-breadcrumb-main {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-top: 10px;
+    .cdx-breadcrumb-link {
+        color: #808589;
+        font-size: 16px; 
+        font-weight: 500; 
+        transition: var(--transition);
+        &:hover {
+            color: #F7C600;
+        }
+    }
+    .cdx-breadcrumb-list {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: #030611;
+        font-size: 16px;
+        font-weight: 500;
+        position: relative;
+        &::before {
+            position: absolute;
+            top: 10px;
+            right: -28%;
+            width: 5px;
+            height: 5px;
+            background-color: #787882;
+            border-radius: 100px;
+            content: "";
+        }
+        &:last-child::before {
+            display: none;
+        }
+    }
+   
+}
+
+ .cdx-error-title {
+    color: #030611;
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 60px;
+    @media #{$sm} {
+        font-size: 32px;
+        padding-top: 40px;
+    }
+}
+.cdx-error-text {
+    color: #808589;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 40px;
+    @media #{$sm} { 
+        padding-bottom: 30px;
+    }
+}
